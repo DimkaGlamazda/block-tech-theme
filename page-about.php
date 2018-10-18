@@ -1,7 +1,9 @@
 <?php get_header() ?>
 <header class="header header-about">
   <nav class="nav-inverse">
-    <a class="logotype" href="index.html"></a>
+    <a class="logotype" href="index.html">
+      <img src="<?=Media::iconURI( 'logo-inverse.svg' )?>" alt="logo">
+    </a>
     <ul class="menu">
       <li><a href="index.html">HOME</a></li>
       <li><a href="about.html">企業概要</a></li>
@@ -236,4 +238,5 @@
     </form>
   </div>
 </section>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBwY9f3meuCBvcVK20P8RkGlxYQMbhz08"></script>
 <?php get_footer() ?>
