@@ -1,0 +1,250 @@
+
+.nav, .nav-inverse {
+	@include flex(center, space-between);
+	position: relative;
+	padding: 30px 30px 0;
+	width: 100%;
+	z-index:5;
+}
+
+.mobile-header, .mobile-header-inverse {
+	display:none;
+}
+
+.logotype {
+	position: relative;
+	width:20%;
+	display:block;
+
+	img {
+		@include position(absolute, -30px, false, false, 0);
+		@include block-size(290px, 60px);
+		display: block;
+	}
+}
+
+.nav {
+
+	.menu a {
+		color: #fff;
+	}
+
+	.close {
+		display:none;
+	}
+}
+
+.nav-inverse {
+
+	.menu a {
+		color: #000;
+	}
+
+	.close {
+		display:none;
+	}
+}
+
+.menu {
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	@include flex();
+	@include calc(width, "60% - 60px");
+
+	li {
+		display: inline-block;
+		height:50px;
+
+		a {
+			position: relative;
+			margin: 0 15px 0;
+			border-bottom: transparent solid 2px;	
+			text-decoration: none;
+			line-height: 50px;
+			font-weight: 500;
+
+			@include flex();
+			@include font-size(14px);
+			@include transition(all .4s ease);
+
+			&:after {
+				content: '';
+				@include position(absolute, false, 0, 20px, 0);
+				height: 2px;
+				@include transition(all .4s ease);
+			}
+
+			&:hover {
+				color: $blue;
+				&:after {
+					bottom: 10px;
+					background-color: $blue;
+				}
+			}
+		}
+	}
+}
+
+.contact-btn-container {
+	width: 20%;
+
+	@include flex(center, flex-end);
+
+	a {
+		@extend .blue-btn;
+	}
+}
+
+@include media-breakpoint-between(sm, lg) {
+	.nav, .nav-inverse {
+		width: 1200px;
+		margin: auto;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+
+	.logotype {
+		position: relative;
+		width:20%;
+		display:block;
+
+		img {
+			@include position(absolute, 10px, false, false, 0);
+			@include block-size(290px, 60px);
+			display: block;
+		}
+	}
+
+	.nav, .nav-inverse {
+		display:none;
+		@include opacity(0);
+		@include transition(all .4s ease);
+
+	}
+
+	.nav.active, .nav-inversev.active {
+		@include position(fixed, 0, 0, 0, 0);
+	}
+
+	.mobile-header, .mobile-header-inverse {
+		@include flex(center, space-between);
+		@include position(absolute, 0, 0, false, 0);
+		height: 90px;
+		padding: 0 0 0 10px;
+
+		h6 {
+			z-index:2;
+			color:#fff;
+		}
+
+		.button-nav {
+			position:relative;
+			overflow: hidden;
+			height:60px;
+           	width:80px;
+           	cursor:pointer;
+           	z-index: 3;
+           	padding-top: 10px;
+            
+            &:after {
+				content:"";
+				@include position(absolute, -10px, -31px);
+				height:100px;
+            	width:100px;
+            	background-color: #0092ff;
+				@include transform(rotate(20deg));
+				z-index:-1;
+            }
+            span {
+            	display:block;
+            	width:38px;
+            	height:3px;
+            	background-color: #fff;
+            	margin:7px 0 0 30px;
+            	z-index:999;
+            }
+        }
+	}
+
+	.mobile-header-inverse {
+		h6 {
+			color: #000;
+		}
+	}
+}
+
+.nav.active, .nav-inverse.active {
+	@include position(fixed, 0, 0, 0, 0);
+	width:100%;
+	@include flex(flex-start, flex-start, column);
+	@include opacity(1);
+	
+	background-color: #303030;
+
+	.logotype {
+		position: relative;
+		width:100%;
+		height:10%;
+		
+		&:after {
+			content: "";
+			display: block;
+			@include position(absolute, 0, false, false, 0);
+			@include block-size(200px, 41px);
+			background:url('media/icons/logo.svg') center center no-repeat;
+			@include background-size(cover);
+		}
+	}
+
+	.menu {
+		height:70%;
+		@include flex(flex-start, center, column);
+
+		li {
+			width:auto;
+			a {
+				display:block;
+				color:#fff;
+			}
+
+			a.active {
+				color:#0092ff;
+			}
+		}
+	}
+
+	.contact-btn-container {
+		height:20%;
+		width: 100%;
+
+		a {
+			width:100%;
+			text-align: center;
+		}
+	}
+
+	.close {
+		@include position(absolute, 15px, 15px);
+		@include opacity(1);
+		display:block;
+		height:40px;
+		width:40px;
+
+		&:before, &:after {
+			content:"";
+			@include position(absolute, 19px, 0);
+			@include transform(rotate(-45deg));
+			width:inherit;
+			height: 2px;
+			background-color: #fff;
+		}
+
+		&:before {
+			@include transform(rotate(45deg));
+		}
+	}
+}

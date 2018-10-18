@@ -1,0 +1,31 @@
+
+.header-services {
+
+	.body {
+		background: url('media/services/bg-header.png') center 20% no-repeat;
+		margin-bottom:60px;
+
+		&:after {
+			background-color: rgba(34, 42, 74, .8);
+		}
+
+		&:before {
+			@include position(absolute, false, -2px, -40px, false);
+
+			content: "";
+			margin-right: 50%; 
+			background-color: rgba(0, 146, 255, 1);
+			height:90px;
+			width: 4px;
+			z-index:4;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.header-services {
+		.body {
+			margin-top: 90px;
+		}
+	}
+}

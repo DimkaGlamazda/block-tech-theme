@@ -1,0 +1,117 @@
+.about-section-3 {
+	@extend .wrapper;
+	@include background-size(71%);
+	background-color: rgba(246, 248, 249, 1);
+	padding: 50px 0 0;
+    background-color: #f6f8f9;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	.bg-1 {
+		@include position(absolute, -15%, 0, -25%, 60%);
+		@include block-size(100%, 150%);
+		@include transform(rotate(20deg));
+		background-color: #EFF1F3;
+		z-index: 2;
+	}
+	.bg-2 {
+		@include position(absolute, 10%, 0, 0, 65%);
+		@include block-size(100%, 150%);
+		@include transform(rotate(35deg));
+		background-color: #E9EBEE;
+		z-index:3;
+	}
+
+	.bg-3 {
+		@include position(absolute, 24%, 0, 0, 76%);
+		@include block-size(100%, 150%);
+		@include transform(rotate(50deg));
+		background-color: #E3E6EA;
+		z-index: 4;
+	}
+
+	.bg-4 {
+		@include position(absolute, 48%, 0, 0, 76%);
+		@include block-size(100%, 150%);
+		@include transform(rotate(65deg));
+		background-color: #E9EBEE;
+		z-index: 5;
+	}
+
+	.section-title {
+		padding: 0 0 35px;
+		margin: 0;
+		z-index:6;
+	}
+
+	.section-body {
+		z-index:6;
+		position: relative;
+		width: 100%;
+		padding-left: 44%;
+		overflow: hidden;
+
+		h5 {
+			padding: 0 0 15px 0;
+			margin: 0;
+			@include font-size(17px);
+			font-weight: bold;
+			line-height: 30px;
+		}
+
+		p {
+			@include font-size(13px);
+			line-height: 26px;
+			padding: 0 50px 10px 0;
+		}
+
+		.note {
+			text-align: right;
+			padding: 0 50px 50px 10px;
+			span {
+				@include font-size(17px);
+				line-height: 33px;
+				display:block;
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	.man {
+		@include position(absolute, false, false, -10%, 3%);
+		@include background-size(cover);
+		background: url("media/about/man.png") no-repeat;
+		width:555px;
+		height: 600px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.about-section-3{
+		.section-body {
+
+			padding: 0 25px 300px;
+
+			h5 {
+				text-align: center;
+			}
+
+			p {
+				padding: 0 0 10px 0;
+			}
+			
+			.note {
+				@include position(absolute, false, 0, 4%);
+				padding: 0 25px 0 0;
+			}
+
+			.man {
+				@include position(absolute, false, false, -10%, 3%);
+				background: url("media/about/man.png") -15% no-repeat;
+				background-size: 234px;
+				height: 515px;
+			}
+		}
+	}	
+}

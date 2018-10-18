@@ -1,0 +1,144 @@
+.footer {
+	background-color: rgba(34, 42, 74, 1);
+
+	.nav {
+		padding-bottom: 30px;
+	}
+
+	.end {
+		padding: 20px 30px;
+		background-color: rgba(52, 60, 91, 1);
+		@include flex(center, space-between);
+
+		.policy {
+			a {
+				@include font-size(14px);
+				display:inline-block;
+				color: #fff;
+				margin-right: 60px;
+			}
+		}
+
+		.coppyright {
+			color:#B3B8C2;
+		}
+	}
+}
+
+@include media-breakpoint-between(sm, md) {
+    .footer {
+        width:1200px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+	.footer {
+		width:100%;
+		.nav {
+			@include opacity(1);
+			width:100%;
+			display:block;
+			padding:10px 20px;
+
+			.logotype {
+				width:200px;
+				height:55px;
+
+				&:after {
+					width: inherit;
+					background-size: 100%;
+					top:0;
+				}
+			}
+
+			.menu {
+				display:block;
+				width:70%;
+				margin: 40px auto;
+				padding:0;
+				
+				li {
+					float: left;
+					width:25%;
+
+					a {
+						margin:0;
+					}
+				}
+			}
+
+			.contact-btn-container {
+				width:200px;
+				margin: 0 auto 40px;
+				text-align: center;
+			}
+		}
+
+		.end {
+			@include flex(center, space-between, column);
+
+			.policy {
+				width:70%;
+				margin: auto;
+				a {
+					@include font-size(14px);
+					display:block;
+					margin-right: 0px;
+					margin-bottom:5px;
+				}
+			}
+
+			.coppyright {
+				width:70%;
+				margin: 10px auto 0;
+				color:#B3B8C2;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.footer {
+		.nav {
+			.menu {
+				height:auto;
+				overflow: hidden;
+				li {
+					float: left;
+					width:50%;
+					.active {
+						color:#0092ff;
+					}
+				}
+			}
+
+			.contact-btn-container {
+				width:100%;
+				margin: 0 auto 40px;
+				text-align: center;
+				a {
+					width:100%;
+				}
+			}
+		}
+		
+		.end {
+			.policy {
+				width:200px;
+				margin: auto;
+				a {
+					@include font-size(14px);
+					display:block;
+					margin-right: 0px;
+					margin-bottom:7px;
+				}
+			}
+
+			.coppyright {
+				width:200px;
+				margin: 10px auto 0;
+			}
+		}
+	
+	}
+}

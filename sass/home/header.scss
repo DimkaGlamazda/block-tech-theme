@@ -1,0 +1,168 @@
+
+.h-header-bg {
+	@include position(absolute, 0, false, false, 0);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    video {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 50%;
+    }
+
+    img {
+        display:none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 50%;
+    }
+}
+
+.h-header-media {
+	width: 100%;
+}
+
+.home-header {
+
+    @extend .section-margin;
+	
+    .wrapper {
+        position:relative;
+        width: 100%;
+        height:100%;
+        @include flex(center, center, column);
+    }
+
+	h2 {
+        overflow:hidden;
+       
+		width: 80%;
+		text-transform: uppercase;
+		color:$white;
+
+
+		span {
+             @include font-size(76px);
+            line-height: 80px;
+            font-weight:800;
+			display: block;
+            margin-bottom: 20px;
+
+			&:nth-child(3) {
+				color:$blue;
+			}
+		}
+
+		p {
+			@include font-size(24px);
+            line-height: 37px;
+		}
+	}
+	
+	.h-h-jump-down-container {
+		$iconScrollColor: #acafb1;
+		height: 80px;
+
+        @include position(absolute, 88%, false, false, false);
+
+		.icon-scroll {
+		    margin: -70px 0 10px -13px;
+		    cursor: pointer;
+
+		    @include position(absolute, false, false, false, 50%);
+		    @include block-size(24px, 39px);
+		    @include b-shadow(0, 0, 5px, $iconScrollColor, true);
+		    @include b-radius(25px);
+
+		    &:before {
+			    content: '';
+			    display: block;
+			    background: $iconScrollColor;
+			    margin: 10px 0 0 10px;
+
+			    @include block-size(4px, 4px);
+			    @include b-radius(4px);
+			    @include animation-name(scroll);
+			    @include animation-duration(1.5s);
+				@include animation-iteration-count(infinite);			
+			}
+		}
+
+		@include keyframes(scroll) {
+		    0% {
+		    	@include opacity(1);
+		    }
+		    100% {
+		        @include opacity(0);
+		        @include translate(0, 23px);
+		    }
+		}
+	}
+}
+
+@include media-breakpoint-between(sm, md) {
+    .h-header-bg {
+        width:1200px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+
+    .h-header-bg {
+       
+        width:100%;
+
+        video {
+            display:none;
+        }
+
+        img {
+            display:inline;
+        }
+    }
+
+    .home-header h2 {
+        @include position(absolute, false, 0, false, 0);
+        overflow:hidden;
+        width: 100%;
+        height:auto;
+        padding: 0 25px;
+        margin-bottom: 0;
+
+        span {
+            @include font-size(40px);
+            line-height: 60px;
+            font-weight:800;
+            width:100%;
+            margin-bottom: 0px;
+
+            &:nth-child(3) {
+                color:$blue;
+            }
+        }
+
+        p {
+            
+            @include font-size(24px);
+            line-height: 37px;
+            padding-top: 20px;
+        }
+    }
+
+    .home-header  .h-h-jump-down-container {
+        .icon-scroll {
+            margin: 0 0 10px -13px;
+        }
+    }    
+}
+
+@include media-breakpoint-down(xs) {
+    .home-header h2 {
+        
+    }
+}

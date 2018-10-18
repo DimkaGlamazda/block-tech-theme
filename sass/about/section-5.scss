@@ -1,0 +1,124 @@
+.about-section-5 {
+	.wrapper {
+		@include flex(center, center, column);
+		@include background-size(cover);
+		position: relative;
+		overflow: hidden;
+		background-size: auto;
+		height:400px;
+		color:#fff;
+		z-index: 1;
+
+		&:after {
+			content: "";
+			@include position(absolute, 0, 0, 0, 0);
+			background-color: rgba(0, 0, 0, .5);
+		}
+
+		img {
+			
+			width:103%;
+		}
+
+		h4 {
+			@include font-size(34px);
+			line-height: 20px;
+			font-weight:normal;
+			z-index:3;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			padding-bottom: 50px;
+			position:relative;
+			&:after {
+				content:"";
+				position:absolute;
+				left: 30%;
+				bottom: 0;
+				height:2px;
+				width: 40%;
+				background-color: #fff;
+			}
+		}
+
+		p {
+			@include font-size(16px);
+			z-index:3;
+			margin-bottom:10px;
+
+			span {
+				display:block;
+				text-align: center;
+				font-weight:300;
+				padding-bottom: 20px;
+
+				strong {
+					font-weight:600;
+					font-family: $open-sans, sans-serif;
+				}
+			}
+		}
+
+		a {
+			@extend .transparent-btn;
+			z-index:3;
+		}
+
+		.arrow-bottom {
+			@include block-size(17px, 50px);
+			@include background-size(cover);
+			z-index:3;
+			display:inline-block;
+			background: url('media/icons/arrow-bottom.svg') left 0px no-repeat;
+			margin-top:25px;
+
+			@include animation-duration(1.5s);
+			@include animation-iteration-count(infinite);
+			@include animation-name(moveBottom);
+			
+			@include keyframes(moveBottom) {
+				from {
+				   background-position: left 0px;
+				}
+				50% {
+					background-position: left 10px;
+				}
+				to {
+				  	background-position: left 0px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.about-section-5 {
+		.wrapper {
+			img {
+				@include position(absolute, -54%, 0);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.about-section-5 {
+		.wrapper {
+			h4 {
+				@include font-size(24px);
+				line-height:29px;
+			}
+
+			img {
+				@include position(absolute);
+				width:160%;
+			}
+
+			a {
+				&:hover {
+					background-color: rgba(255, 255, 255, 0);
+					color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.header-about {
+	.body {
+		&:after {
+			background-color: rgba(34, 42, 74, .7);
+		}
+
+		background: url('media/about/header-bg.png') center 30% no-repeat;
+		@include background-size(cover);
+
+		&:before {
+			@include position(absolute, false, -2px, -40px, false);
+			content: "";
+			margin-right: 50%; 
+			background-color: rgba(0, 146, 255, 1);
+			height:90px;
+			width: 4px;
+			z-index:4;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+
+	.header-about {
+		.body {
+			margin-top: 90px;
+		}
+	}
+    
+    .header-about .body h1 {
+        @include position(absolute, 160px);
+        @include font-size(40px);
+        overflow:hidden;
+        width: 100%;
+        height:auto;
+        padding: 0 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        span {
+            @include font-size(34px);
+            line-height: 40px;
+            font-weight:800;
+            width:60%;
+            margin-bottom: 0px;
+
+            &:nth-child(3) {
+                color:$blue;
+            }
+        }
+    }
+
+    .header-about .body p {
+    	@include position(absolute, 220px);
+    	@include font-size(24px);
+        line-height: 32px;
+        padding: 0 25px;
+        margin-bottom:0;
+    }
+}

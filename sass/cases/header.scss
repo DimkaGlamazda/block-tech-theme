@@ -1,0 +1,68 @@
+.header-cases {
+	.body {
+		@extend .wrapper;
+		@include flex(center, center, column);
+		margin-top: 30px;
+		padding-bottom: 0;
+
+		height:400px;
+		z-index: 1;
+
+		h1 {
+			@include font-size(60px);
+			text-transform: uppercase;
+			z-index:3;
+			position: relative;
+			color:#222a4a;
+
+			&:after {
+				content: "";
+				@include position(absolute, false, 30%, -90%, false);
+				width: 40%;
+				height:2px;
+				background-color: $blue;
+				z-index:4
+			}
+		}
+
+		p {
+			@include font-size(30px);
+			margin-top: 10px;
+			color:#222a4a;
+			z-index:3;
+		}
+	}
+}
+
+.cases-section-3 {
+	@extend .wrapper;
+	
+	.text {
+		background-color: rgba(57, 46, 127, 1);
+	}
+}
+
+.cases-section-4 {
+	@extend .wrapper;
+}
+
+@include media-breakpoint-down(sm) {
+	.header-cases {
+		.body {
+			margin-top: 90px;
+			justify-content: flex-start;
+
+			h1 {
+				white-space: nowrap;
+				&:after {
+					bottom:-55%;
+				}
+			}
+
+			p {
+				line-height:40px;
+				text-align: center;
+			}
+		}
+	}
+}

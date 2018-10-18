@@ -1,0 +1,44 @@
+.about-section-6 {
+	display:none;
+	@extend .wrapper;
+	padding: 70px 15% 0;
+
+	.question {
+		@include font-size(17px);
+		line-height: 30px;
+		color: #0092ff;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+
+	.answer {
+		p {
+			@include font-size(15px);
+			line-height: 26px;
+			margin-bottom: 30px;
+			font-weight:normal;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 20px 0 50px;
+		width: 100%;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.about-section-6 {
+		padding: 30px 25px 0;
+
+		.question {
+			margin-bottom: 10px;
+		}
+
+		.answer {
+			p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

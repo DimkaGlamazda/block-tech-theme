@@ -1,0 +1,123 @@
+.cases-section-1 {
+	@extend .wrapper;
+}
+
+.case-image-left {
+	
+	position:relative;
+	overflow:hidden;
+	height: 527px;
+
+	.image {
+		@include position(absolute, 0, false, false, 0);
+		width: 50%;
+		height: 442px;
+		overflow: hidden;
+		z-index:2;
+
+		img {
+			@include position(absolute, 0, false, false, 0);
+			height:inherit;	
+		}
+	}
+
+	.text {
+		@include position(absolute, false, 0, 0);
+		@include flex(flex-start, center, column);
+
+		width: 65%;
+		height: 470px;
+		z-index:1;
+		padding: 0 4% 0 20%;
+		background-color: rgba(34, 42, 74, 1);
+		color: #fff;
+
+		h5 {
+			@include font-size(27px);
+			font-weight: 800;
+			line-height: 34px;
+			font-family: $open-sans, sans-serif;
+			margin-bottom: 0;
+		}
+
+		h4 {
+			@include font-size(55px);
+			white-space: nowrap;
+			font-family: $open-sans, sans-serif;
+			color: rgba(0, 146, 255, 1);
+			font-weight: 800;
+			margin-bottom: 32px;
+		}
+
+		h6 {
+			@include font-size(20px);
+			margin-bottom: 30px;
+		}
+
+		p {
+			@include font-size(15px);
+			line-height: 26px;
+			font-weight: normal;
+			width: 100%;
+			height: 100px;
+			margin-bottom: 40px;
+			overflow: hidden;	
+		    text-overflow: ellipsis;
+		}
+
+		a {
+			@extend .blue-btn;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+
+	.case-image-left {
+		height:auto;
+
+		.image {
+			position: static;
+			height:auto;
+			width:100%;
+			overflow:hidden;
+
+			img {
+				position: relative;
+				width:100%;
+				height:auto;
+				left: 0;
+			}
+		}
+
+		.text {
+			position: static;
+			width:100%;
+			height:auto;
+			padding:30px 25px;
+
+			h5 {
+				@include font-size(25px);
+				font-weight: 600;
+				padding-bottom: 15px;
+			}
+
+			h4 {
+				@include font-size(34px);
+				font-weight: 600;
+			}
+
+			p {
+				@include font-size(14px);
+				height: auto;
+				margin-bottom: 30px;	
+			}
+
+			a {
+				width:100%;
+				text-align: center;
+			}
+			
+		}
+	}
+}
