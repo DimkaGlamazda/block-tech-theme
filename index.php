@@ -34,7 +34,7 @@
               <span>世界を代表するブロックチェーン先駆者が語る、</span>
               <span>ブロックチェーンの最新事例とビジネスに実装する方法。</span>
             </p>
-            <a href="#">詳細はこちら</a> <!-- news.html  -->
+            <a href="/news/京都工芸繊維大学との「働き方改革」ソリューシ/">詳細はこちら</a>
           </div>
           <div class="slide-number">01</div>
         </div>
