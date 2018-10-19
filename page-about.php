@@ -1,28 +1,6 @@
 <?php get_header() ?>
 <header class="header header-about">
-  <nav class="nav-inverse">
-    <a class="logotype" href="index.html">
-      <img src="<?=Media::iconURI( 'logo-inverse.svg' )?>" alt="logo">
-    </a>
-    <ul class="menu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">企業概要</a></li>
-      <li><a href="services.html">サービス</a></li>
-      <li><a href="cases.html">事例紹介</a></li>
-    </ul>
-    <div class="contact-btn-container">
-      <a href="about.html#form">お問い合わせ</a>
-    </div>
-    <div class="close"></div>
-  </nav>
-  <div class="mobile-header-inverse">
-    <h6>BlockTechJapan</h6>
-    <div class="button-nav">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+  <?php Parts::getHeader(true) ?>
   <div class="body">
     <h1>About us</h1>
     <p>ビジネスを変える、社会を変える、あなたを変える、ブロックチェーンで。</p>
@@ -128,7 +106,7 @@
         <a href="//www.dbic.jp/">サイトを見る</a>
       </div>
       <div class="image">
-        <img src="media/about/partner.png" alt="DBIC">
+        <img src="<?=Media::contentURI('partner.png')?>" alt="DBIC">
       </div>
     </div>
     <div class="section-end">さらに表示</div>
@@ -137,7 +115,7 @@
 
 <section class="about-section-5">
   <div class="wrapper">
-    <img src="media/about/bg2.png" alt="message">
+    <img src="<?=Media::contentURI('conversation.png')?>" alt="message">
     <h4>私たちのビジョンとミッション</h4>
     <p>
       <span><strong>CEO サーシャ・コフマンが語る、</strong></span>
@@ -238,5 +216,6 @@
     </form>
   </div>
 </section>
+<input type="hidden" id="mapMarker" value="<?=Media::iconURI('map-marker.png')?>">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBwY9f3meuCBvcVK20P8RkGlxYQMbhz08"></script>
 <?php get_footer() ?>

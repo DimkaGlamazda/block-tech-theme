@@ -6,29 +6,9 @@
   </video>
 </div>
 <header class="header home-header" data-js="h-header-section">
-  <nav class="nav">
-    <a class="logotype" href="index.html">
-      <img src="<?=Media::iconURI( 'logo.svg' )?>" alt="logo">
-    </a>
-    <ul class="menu">
-      <li><a class="active" href="index.html">HOME</a></li>
-      <li><a href="about.html">企業概要</a></li>
-      <li><a href="services.html">サービス</a></li>
-      <li><a href="cases.html">事例紹介</a></li>
-    </ul>
-    <div class="contact-btn-container">
-      <a href="about.html#form">お問い合わせ</a>
-    </div>
-    <div class="close"></div>
-  </nav>
-  <div class="mobile-header">
-    <h6>BlockTechJapan</h6>
-    <div class="button-nav">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+
+    <?php Parts::getHeader() ?>
+
   <div class="wrapper">
     <h2><span>making</span><span>blockchain</span><span>innovation</span>
       <p>ブロックチェーン・イノベーションの創造へ。</p></h2>
@@ -54,7 +34,7 @@
               <span>世界を代表するブロックチェーン先駆者が語る、</span>
               <span>ブロックチェーンの最新事例とビジネスに実装する方法。</span>
             </p>
-            <a href="news.html">詳細はこちら</a>
+            <a href="#">詳細はこちら</a> <!-- news.html  -->
           </div>
           <div class="slide-number">01</div>
         </div>
@@ -69,7 +49,7 @@
       <div>
         <img src="<?=Media::contentURI( 'bronze-wallpaper.png' )?>" alt="Bronze wallpaper">
         <div class="slider-item-overlay">
-          <a href="pages/use-case-1.html" class="content-2">
+          <a href="/finance" class="content-2">
             <h3>金融業向けブロックチェーン応用事例</h3>
             <p>分散型台帳技術とも呼ばれているブロックチェーンが起こすデータベース革命。最もホットな金融分野における10の事例をご紹介します。</p>
           </a>
@@ -123,8 +103,8 @@
           <p>世界最高峰のテクノロジーサービスを提供します。</p>
           <div>
             <ul>
-              <li class="before-triangle"><a href="about.html#about-section-3">代表メッセージ</a></li>
-              <li class="before-triangle"><a href="about.html">BlockTechJapanとは</a></li>
+              <li class="before-triangle"><a href="/about#about-section-3">代表メッセージ</a></li>
+              <li class="before-triangle"><a href="/about">BlockTechJapanとは</a></li>
             </ul>
             <ul>
               <li>BlockTechJapan CEO</li>
@@ -146,7 +126,7 @@
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Seminars</span></h4>
         <h5>ビジネスパーソンのためのブロックチェーンセミナー</h5>
-        <a href="services.html#services-section-1">セミナーサービスについて詳しく</a>
+        <a href="/services#services-section-1">セミナーサービスについて詳しく</a>
         <p>ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</p>
         <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
@@ -155,7 +135,7 @@
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Education</span></h4>
         <h5>法人向けブロックチェーン教育サービス</h5>
-        <a href="services.html#services-section-3">学習サービスについて詳しく</a>
+        <a href="/services#services-section-3">学習サービスについて詳しく</a>
         <p>ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</p>
         <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
@@ -164,7 +144,7 @@
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Development</span></h4>
         <h5>ブロックチェーン開発サービス</h5>
-        <a href="services.html#service-section-5">開発サービスについて詳しく</a>
+        <a href="/services#service-section-5">開発サービスについて詳しく</a>
         <p>ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</p>
         <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
@@ -174,7 +154,7 @@
         <div class="h-section-part-2-body-text">
           <h4>世界のあり方を根底から変える。<span>そんなブロックチェーンを、あなたのビジネスに。</span></h4>
           <p>ブロックチェーンは、組織や業界全体を変革する可能性を秘めています。私たちは、お客様のブロックチェーンへの取り組みをサポートするだけでなく、既存のビジネスプロセスを見直し、改善するためのサービスを提供しています。
-            <a href="services.html">さらに詳しく</a></p>
+            <a href="/services">さらに詳しく</a></p>
         </div>
         <div class="h-section-part-2-body-img">
           <img src="<?=Media::contentURI( 'office.jpg' )?>" alt="Office">
@@ -194,7 +174,7 @@
       <div class="right-content">
         <div class="content-wrapper">
           <h5>1. Finance</h5>
-          <h4><a href="pages/use-case-1.html"><span>金融業における</span><span>ブロックチェーン活用事例</span></a></h4>
+          <h4><a href="/finance"><span>金融業における</span><span>ブロックチェーン活用事例</span></a></h4>
           <p>今、ブロックチェーンの導入が一番進んでいる金融業。世界最先端技術が既存のバンキングシステムを改革する１０の事例をご紹介します。</p>
         </div>
         <div class="bg-1"></div>
@@ -209,7 +189,7 @@
       <div class="left-content">
         <div class="content-wrapper">
           <h5>2. Logistics</h5>
-          <h4><a href="pages/use-case-2.html"><span>物流を変え、コーヒー農家を守る</span><span>スターバックスとブロックチェーン</span></a></h4>
+          <h4><a href="/logistic"><span>物流を変え、コーヒー農家を守る</span><span>スターバックスとブロックチェーン</span></a></h4>
           <p>ブロックチェーンなら、コーヒー農家を貧困から救うことができます。ブロックチェーンを活用して、トレーサビリティ（追跡可能性）を向上させる方法をご紹介します。</p>
         </div>
         <div class="bg-1"></div>
@@ -218,69 +198,34 @@
     </div>
   </div>
 </section>
-<section class="h-section-4">
-  <h3 class="section-title">news</h3>
-  <div class="section-body">
-    <div class="h-news-item">
-      <div class="img">
-        <img src="<?=Media::contentURI('fake-news/1.jpg')?>" alt="news 1">
+
+<?php
+$news = News::getNews(5);
+
+if( ! empty($news)):
+    ?>
+  <section class="h-section-4">
+    <h3 class="section-title">news</h3>
+    <div class="section-body">
+        <?php foreach($news as $item): ?>
+          <div class="h-news-item">
+            <div class="img">
+              <img src="<?=$item['img_src'] ?>" alt="<?=$item['title'] ?>">
+            </div>
+            <div class="date"><?=$item['date']?></div>
+            <p class="description">
+              <a href="<?=$item['link'] ?>"><?=$item['title']?></a>
+            </p>
+          </div>
+        <?php endforeach; ?>
+      <div class="button">
+        <span></span>
+        <span>以前のニュース</span>
       </div>
-      <div class="date">
-        2018/12/28
-      </div>
-      <p class="description">
-        <a href="#">ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</a>
-      </p>
     </div>
-    <div class="h-news-item">
-      <div class="img">
-        <img src="<?=Media::contentURI('fake-news/2.jpg')?>" alt="news 2">
-      </div>
-      <div class="date">
-        2018/07/19
-      </div>
-      <p class="description">
-        <a href="#">ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライ</a>
-      </p>
-    </div>
-    <div class="h-news-item">
-      <div class="img">
-        <img src="<?=Media::contentURI('fake-news/3.jpg')?>" alt="news 3">
-      </div>
-      <div class="date">
-        2018/06/11
-      </div>
-      <p class="description">
-        <a href="#">ブロッブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</a>
-      </p>
-    </div>
-    <div class="h-news-item">
-      <div class="img">
-        <img src="<?=Media::contentURI('fake-news/4.jpg')?>" alt="news 4">
-      </div>
-      <div class="date">
-        2018/04/4
-      </div>
-      <p class="description">
-        <a href="#">ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</a>
-      </p>
-    </div>
-    <div class="h-news-item">
-      <div class="img">
-        <img src="<?=Media::contentURI('fake-news/5.jpg')?>" alt="news 5">
-      </div>
-      <div class="date">
-        2018/01/1
-      </div>
-      <p class="description">
-        <a href="#">ブロッブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</a>
-      </p>
-    </div>
-    <div class="button">
-      <span></span>
-      <span>以前のニュース</span>
-    </div>
-  </div>
-</section>
+  </section>
+
+<?php endif; ?>
+
 <?php get_footer() ?>
 

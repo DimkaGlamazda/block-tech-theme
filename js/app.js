@@ -503,12 +503,11 @@ function initialize() {
         };
 
         map = new google.maps.Map(document.getElementById('map'), mapOptions);
-        //var screen = new Screen();
 
-        var url = WPURLS.siteurl;
+        var url = document.getElementById('mapMarker').value;
 
          var image = {
-            url: url + '/media/icons/map-marker.png'
+            url: url
             // This marker is 20 pixels wide by 32 pixels high.
             // size: new google.maps.Size(89, 112) ,
             // The origin for this image is (0, 0).

@@ -81,7 +81,7 @@
 	.man {
 		@include position(absolute, false, false, -10%, 3%);
 		@include background-size(cover);
-		background: url("media/about/man.png") no-repeat;
+		background: url("media/content/Alexander.png") no-repeat;
 		width:555px;
 		height: 600px;
 	}

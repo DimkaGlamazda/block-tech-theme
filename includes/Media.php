@@ -22,4 +22,11 @@ class Media
 	{
 		return self::getImgRoot() . '/' . self::CONTENT_FOLDER . '/' . $file_name;
 	}
+
+	const STAFF_FOLDER = 'staff';
+
+	public static function staffURI($file_name)
+	{
+		return self::getImgRoot() . '/' . self::STAFF_FOLDER . '/' . $file_name;
+	}
 }
