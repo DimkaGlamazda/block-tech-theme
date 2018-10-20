@@ -115,7 +115,7 @@
 		img {
 			@include position(absolute, 10px, false, false, 0);
 			@include block-size(290px, 60px);
-			display: block;
+			display: none;
 		}
 	}
 

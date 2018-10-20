@@ -7276,7 +7276,7 @@ body {
       left: 0;
       width: 290px;
       height: 60px;
-      display: block; }
+      display: none; }
 
   .nav, .nav-inverse {
     display: none;
