@@ -25,7 +25,7 @@
 	}
 }
 
-@include media-breakpoint-between(sm, md) {
+@include media-breakpoint-between(sm, lg) {
     .footer {
         width:1200px;
     }

@@ -54,8 +54,8 @@
   </div>
 </section>
 <section class="services-section-2">
-  <h2 class="section-title">セミナー講師紹介</h2>
   <div class="section-body">
+    <h2 class="section-title">セミナー講師紹介</h2>
     <div class="member">
       <div class="image">
         <img src="<?=Media::staffURI('boris-otonicar.png')?>" alt="Boris Otonicar">

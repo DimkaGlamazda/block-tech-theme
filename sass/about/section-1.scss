@@ -1,5 +1,7 @@
 .about-section-0 {
 
+	@extend .wrapper;
+
 	margin-bottom: 50px;
 	padding-top:60px;
 
@@ -45,6 +47,7 @@
 
 .about-section-1 {
 
+	@extend .wrapper;
 	@extend .section-margin;
 
 	.section-body {

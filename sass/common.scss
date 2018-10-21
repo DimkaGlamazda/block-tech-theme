@@ -104,6 +104,18 @@ body {
 	}
 }
 
+@include media-breakpoint-between(sm, lg) {
+	.header {
+		width: 1200px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.header {
+		width: 100%;
+	}
+}
+
 .pre-loader {
 	@include flex();
 	@include position(fixed, 0, 0, 0, 0);

@@ -71,6 +71,12 @@
 	}
 }
 
+@include media-breakpoint-between(sm, lg) {
+	.services-section-3 {
+		width: 1200px;
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	.services-section-3 {
 		width: 100%;

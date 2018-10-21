@@ -4,7 +4,7 @@
 	<div class="body">
 		<h1>Internet of Things</h1>
 		<h2 class="news-title">IoTとブロックチェーンの融合が可能にする未来とは</h2>
-		<img src="<?=Media::contentURI('future_journalism.png')?>" alt="Future journalism">
+		<img class="iot-header-bg-img" src="<?=Media::contentURI('future_journalism.png')?>" alt="Future journalism">
 	</div>
 </header>
 <section class="section-body">

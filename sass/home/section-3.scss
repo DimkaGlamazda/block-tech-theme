@@ -3,6 +3,11 @@
 
 	.section-title {
 		margin-bottom: 60px;
+
+	}
+
+	.section-body {
+		width: 100%;
 	}
 
 	.h-section-3-row {
@@ -190,7 +195,9 @@
 
 @include media-breakpoint-between(sm, lg) {
 	.h-section-3-row {
-		width: 1200px;
+		.section-body {
+			width: 1200px;
+		}
 	}
 }
 
@@ -204,6 +211,10 @@
 		}
 
 		.h-section-3-row {
+
+			.section-body {
+				width: 100%;
+			}
 			height: auto;
 			background-color: rgba(0, 146, 255, 1);
 			.img-left, .img-right {

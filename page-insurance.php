@@ -4,7 +4,7 @@
 	<div class="body">
 		<h1>Insurance</h1>
 		<h2 class="news-title">保険業界に浸透するブロックチェーン</h2>
-		<img src="<?=Media::contentURI('sea_boat.png')?>" alt="Sea and boat">
+		<img class="insurance-header-bg-img" src="<?=Media::contentURI('sea_boat.png')?>" alt="Sea and boat">
 	</div>
 </header>
 <section class="section-body">
