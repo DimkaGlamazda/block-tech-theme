@@ -189,16 +189,33 @@
 		.img-right img {
 			right:0;
 			bottom:0;
+			height: 100%;
 		}
 	}
 }
 
 @include media-breakpoint-between(sm, lg) {
-	.h-section-3-row {
+	.h-section-3 {
 		.section-body {
 			width: 1200px;
 		}
+
+		.h-section-3-row{
+			.img-right img {
+				height: 100%;
+			}
+
+			.left-content.view .content-wrapper {
+				padding-left: 40px;
+			}
+
+			.right-content.view .content-wrapper {
+				padding-right: 40px;
+			}
+		}
 	}
+
+
 }
 
 @include media-breakpoint-down(sm) {
