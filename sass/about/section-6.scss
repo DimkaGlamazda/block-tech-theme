@@ -1,7 +1,7 @@
 .about-section-6 {
 	display:none;
 	@extend .wrapper;
-	padding: 70px 15% 0;
+	padding: 0 15% 90px;
 
 	.question {
 		@include font-size(17px);
@@ -29,7 +29,7 @@
 
 @include media-breakpoint-down(sm) {
 	.about-section-6 {
-		padding: 30px 25px 0;
+		padding: 30px 25px 90px;
 
 		.question {
 			margin-bottom: 10px;

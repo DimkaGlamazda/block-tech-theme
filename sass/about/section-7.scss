@@ -2,8 +2,23 @@
 
 	@extend .wrapper;
 
+	.contact-error-caption {
+		display: block;
+		@include font-size(12px);
+		color: #d02c21;
+		width:90%;
+		height: 12px;
+		margin: auto;
+	}
+
+	textarea {
+		& + .contact-error-caption {
+			width: 100%;
+		}
+	}
+
 	.form {
-		margin: 100px auto;
+		margin: 0 auto 100px;
 		padding: 20px 20px 50px; 
 		box-shadow: 0 0 60px rgba(0,0,0,0.1);
 		width: 50%;

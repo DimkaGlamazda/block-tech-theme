@@ -174,48 +174,15 @@
   </div>
 </div>
 
-<section class="about-section-7" id="form">
-  <div class="form">
-    <h3 class="section-title">Contact</h3>
-    <form>
-      <div class="fsection-form-row">
-        <div class="form-column">
-          <label for="input-1" class="label-required">お名前（ご担当者様名）</label>
-          <input type="text" id="input-1">
-        </div>
-      </div>
-      <div class="section-form-row">
-        <div class="form-column">
-          <label for="input-2" class="label-required">会社名</label>
-          <input type="text" id="input-2">
-        </div>
-        <div class="form-column">
-          <label for="input-3">部署名</label>
-          <input type="text" id="input-3">
-        </div>
-      </div>
-      <div class="section-form-row">
-        <div class="form-column">
-          <label for="input-4" class="label-required">メールアドレス</label>
-          <input type="text" id="input-4">
-        </div>
-        <div class="form-column">
-          <label for="input-5" class="label-required">お電話番号</label>
-          <input type="text" id="input-5">
-        </div>
-      </div>
-      <div class="section-form-row">
-        <div class="form-column">
-          <label for="input-6">こちらにお問い合わせ内容をご記入ください。</label>
-          <textarea id="input-6"></textarea>
-        </div>
-      </div>
-      <div class="section-form-row">
-        <input type="submit" value="送信">
-      </div>
-    </form>
-  </div>
-</section>
+<?php if(shortcode_exists('contact_form')): ?>
+  <section class="about-section-7" id="form">
+    <div class="form">
+      <h3 class="section-title">Contact</h3>
+		<?php echo do_shortcode("[contact_form]"); ?>
+    </div>
+  </section>
+<?php endif; ?>
+
 <input type="hidden" id="mapMarker" value="<?=Media::iconURI('map-marker.png')?>">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBwY9f3meuCBvcVK20P8RkGlxYQMbhz08"></script>
 <?php get_footer() ?>
