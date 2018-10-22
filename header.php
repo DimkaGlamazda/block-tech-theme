@@ -30,8 +30,8 @@
 
 <body <?php body_class(); ?>>
 
-<!--<div class="pre-loader">-->
-<!--  <div id="rotateImg">-->
-<!--    <img src="--><?//=Media::iconURI('logo-inverse.svg')?><!--" alt="logo">-->
-<!--  </div>-->
-<!--</div>-->
+<div class="pre-loader">
+  <div id="rotateImg">
+    <img src="<?=Media::iconURI('logo-inverse.svg')?>" alt="logo">
+  </div>
+</div>

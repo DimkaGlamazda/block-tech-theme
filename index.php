@@ -25,7 +25,7 @@
     <div class="dots"></div>
     <div class="home-slider">
       <div>
-        <img src="<?=Media::contentURI( 'digital-background.png' )?>" alt="Digital background">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'digital-background.png' )?>" alt="Digital background">
         <div class="slider-item-overlay">
           <div class="content-1">
             <h4>DBIC x BlockTechJapan</h4>
@@ -39,15 +39,15 @@
           <div class="slide-number">01</div>
         </div>
         <div class="home-slider-next">
-          <img src="<?=Media::iconURI( 'next.svg' )?>" alt="next">
+          <img data-is-loaded="false" src="<?=Media::iconURI( 'next.svg' )?>" alt="next">
         </div>
         <div class="home-slider-prev">
-          <img src="<?=Media::iconURI( 'prev.svg' )?>" alt="prev">
+          <img data-is-loaded="false" src="<?=Media::iconURI( 'prev.svg' )?>" alt="prev">
         </div>
         <span class="slider-progres-bar"></span>
       </div>
       <div>
-        <img src="<?=Media::contentURI( 'bronze-wallpaper.png' )?>" alt="Bronze wallpaper">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'bronze-wallpaper.png' )?>" alt="Bronze wallpaper">
         <div class="slider-item-overlay">
           <a href="/finance" class="content-2">
             <h3>金融業向けブロックチェーン応用事例</h3>
@@ -56,15 +56,15 @@
           <div class="slide-number">02</div>
         </div>
         <div class="home-slider-next">
-          <img src="<?=Media::iconURI( 'next.svg' )?>" alt="next">
+          <img data-is-loaded="false" src="<?=Media::iconURI( 'next.svg' )?>" alt="next">
         </div>
         <div class="home-slider-prev">
-          <img src="<?=Media::iconURI( 'prev.svg' )?>" alt="prev">
+          <img data-is-loaded="false" src="<?=Media::iconURI( 'prev.svg' )?>" alt="prev">
         </div>
         <span class="slider-progres-bar"></span>
       </div>
       <div>
-        <img src="<?=Media::contentURI( 'pour-travailler-autrement.png' )?>" alt="Pour travailler autrement">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'pour-travailler-autrement.png' )?>" alt="Pour travailler autrement">
         <div class="slider-item-overlay">
           <a href="#" class="content-3">
             <div class="first">
@@ -76,10 +76,10 @@
           <div class="slide-number">03</div>
         </div>
         <div class="home-slider-next">
-          <img src="<?=Media::iconURI( 'next.svg' )?>" alt="next">
+          <img data-is-loaded="false" src="<?=Media::iconURI( 'next.svg' )?>" alt="next">
         </div>
         <div class="home-slider-prev">
-          <img src="<?=Media::iconURI( 'prev.svg' )?>" alt="prev">
+          <img data-is-loaded="false" src="<?=Media::iconURI( 'prev.svg' )?>" alt="prev">
         </div>
         <span class="slider-progres-bar"></span>
       </div>
@@ -112,7 +112,7 @@
             </ul>
           </div>
         </div>
-        <img src="<?=Media::contentURI( 'home-alex.png' )?>" alt="BlockTechJapan CEO">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'home-alex.png' )?>" alt="BlockTechJapan CEO">
       </div>
     </div>
   </div>
@@ -122,7 +122,7 @@
   <div class="section-body">
     <div class="h-section-part-1">
       <div class="h-section-part-1-column">
-        <img src="<?=Media::contentURI( 'conference.png' )?>" alt="Conference">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'conference.png' )?>" alt="Conference">
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Seminars</span></h4>
         <h5>ビジネスパーソンのためのブロックチェーンセミナー</h5>
@@ -131,7 +131,7 @@
         <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
       <div class="h-section-part-1-column">
-        <img src="<?=Media::contentURI( 'library.png' )?>" alt="library">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'library.png' )?>" alt="library">
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Education</span></h4>
         <h5>法人向けブロックチェーン教育サービス</h5>
@@ -140,7 +140,7 @@
         <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
       <div class="h-section-part-1-column">
-        <img src="<?=Media::contentURI( 'engineer-person.png' )?>" alt="Engineer person">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'engineer-person.png' )?>" alt="Engineer person">
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Development</span></h4>
         <h5>ブロックチェーン開発サービス</h5>
@@ -157,7 +157,7 @@
             <a href="/services">さらに詳しく</a></p>
         </div>
         <div class="h-section-part-2-body-img">
-          <img src="<?=Media::contentURI( 'office.jpg' )?>" alt="Office">
+          <img data-is-loaded="false" src="<?=Media::contentURI( 'office.jpg' )?>" alt="Office">
         </div>
       </div>
     </div>
@@ -168,7 +168,7 @@
   <div class="section-body">
     <div class="h-section-3-row">
       <div class="img-left">
-        <img src="<?=Media::contentURI('montreal.png')?>" alt="Montreal">
+        <img data-is-loaded="false" src="<?=Media::contentURI('montreal.png')?>" alt="Montreal">
         <div class="overlay"></div>
       </div>
       <div class="right-content">
@@ -183,7 +183,7 @@
     </div>
     <div class="h-section-3-row">
       <div class="img-right">
-        <img src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
+        <img data-is-loaded="false" src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
         <div class="overlay"></div>
       </div>
       <div class="left-content">
@@ -210,7 +210,7 @@ if( ! empty($news)):
         <?php foreach($news as $item): ?>
           <div class="h-news-item">
             <div class="img">
-              <img src="<?=$item['img_src'] ?>" alt="<?=$item['title'] ?>">
+              <img data-is-loaded="false" src="<?=$item['img_src'] ?>" alt="<?=$item['title'] ?>">
             </div>
             <div class="date"><?=$item['date']?></div>
             <p class="description">

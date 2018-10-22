@@ -12,7 +12,6 @@ jQuery(function () {
         jQuery('.about-section-6').slideToggle();
     });
 
-
     var homebg = new Video();
     var screenWidth = jQuery(window).width();
 
@@ -56,49 +55,76 @@ var PreLoader = function() {
 
     this.screen = new Screen();
     
+    function closePreLoader() {
+        setTimeout(function () {
+            jQuery('.pre-loader').find('img').css('display', 'none');
+            jQuery('.pre-loader').fadeOut( "slow");
+        }, 500);
+    }
+    
     if(this.screen.isDesctop() && jQuery('#home-video').length)
     {
         var vid = document.getElementById("home-video");
-        vid.onloadeddata = function() {
-            jQuery('.pre-loader').css('display', 'none');
-        };
+
+        if(vid.readyState === 4)
+        {
+            closePreLoader();
+        }
+        else
+        {
+            vid.onloadeddata = function()
+            {
+                closePreLoader();
+            };
+        }
     }
     else
     {
-        jQuery('[data-is-loaded]').each(function(index, el) {
-            var mediaItem = jQuery(el);
+        if(jQuery('[data-is-loaded]').length === 0)
+        {
+            closePreLoader();
+        }
+        else
+        {
+            jQuery('[data-is-loaded]').each(function(index, el) {
 
-            var status = el.complete || el.naturalWidth > 0;
-            
-            mediaItem.attr('data-is-loaded', status ? 'true' : 'false');
+                    var mediaItem = jQuery(el);
 
-            if(status)
-            {
-                jQuery('.pre-loader').css('display', 'none');
-            }
-            else
-            {
-                mediaItem.on('load', function () {
+                    var status = el.complete || el.naturalWidth > 0;
 
-                    jQuery(this).attr('data-is-loaded', 'true');
+                    mediaItem.attr('data-is-loaded', status ? 'true' : 'false');
 
-                    var loadStatus = true;
-
-                    jQuery.each(jQuery('[data-is-loaded]'), function(i, e) {
-                        if(jQuery(e).attr('data-is-loaded') == 'false')
-                        {
-                            loadStatus = false;
-                        }
-                    });
-
-                    if(loadStatus)
+                    if(status)
                     {
-                        jQuery('.pre-loader').css('display', 'none');
+                        closePreLoader();
+                    }
+                    else
+                    {
+                        mediaItem.on('load', function () {
+
+                            jQuery(this).attr('data-is-loaded', 'true');
+
+                            var loadStatus = true;
+
+                            jQuery.each(jQuery('[data-is-loaded]'), function(i, e) {
+                                if(jQuery(e).attr('data-is-loaded') === 'false')
+                                {
+                                    loadStatus = false;
+                                }
+                            });
+
+                            if(loadStatus)
+                            {
+                                closePreLoader();
+                            }
+                        });
                     }
                 });
-            }
-        });
-    }   
+        }
+
+
+    }
+
 };
 
 var Video = function () {
@@ -109,6 +135,7 @@ var Video = function () {
     this.header = jQuery('.home-header');
     this.resize();
 };
+
 
 Video.prototype.resize = function() {
     
@@ -155,6 +182,8 @@ Video.prototype.resize = function() {
     });  
 };
 
+
+
 var Slider = function () {
     var slider = jQuery('.home-slider');
 
@@ -181,6 +210,8 @@ var Slider = function () {
         return false;
     });
 };
+
+
 
 var HomeUseCasesSectionAnimation = function() {
 
@@ -209,6 +240,8 @@ var HomeUseCasesSectionAnimation = function() {
         }
     });
 };
+
+
 
 var OwlSlider = function() {
     var newsOwl = jQuery(".owl-carousel");
@@ -243,22 +276,26 @@ var OwlSlider = function() {
     });
 };
 
+
+
 var ServiceLinesAnimation = function() {
 
     this.screen = new Screen();
 
     if(!this.screen.isMobile())
     {
-        jQuery('.h-section-part-1-column img, .h-section-part-1-column a, .h-section-part-1-column p').on('mouseover', function() {
-            jQuery(this).parent().addClass('active');    
+        jQuery(document).on('mouseover', '.h-section-part-1-column img, .h-section-part-1-column a, .h-section-part-1-column p',  function() {
+            jQuery(this).parent().addClass('active');
         });
 
         jQuery(document).on('mouseout', '.h-section-part-1-column', function () {
-            jQuery(this).removeClass('active');    
+            jQuery(this).removeClass('active');
         });
-
-    } else {
+    }
+    else
+    {
         jQuery('.mobile-show-trigger').on('click', function () {
+
             var parent = jQuery(this).parent();
 
             if(parent.hasClass('active'))
@@ -272,6 +309,9 @@ var ServiceLinesAnimation = function() {
         });
     }
 };
+
+
+
 
 var AlexSectionScrollAnimation = function () {
     var block = jQuery('.home-representative-message-section');
@@ -289,6 +329,9 @@ var AlexSectionScrollAnimation = function () {
     });
 };
 
+
+
+
 var ScrollToOneScreenBottom = function() {
 
     var elem = jQuery(".icon-scroll");
@@ -297,6 +340,9 @@ var ScrollToOneScreenBottom = function() {
         jQuery('html, body').animate({scrollTop: jQuery(window).height()}, 500);
     });
 };
+
+
+
 
 var MobileNavActions = function() {
 
@@ -307,7 +353,10 @@ var MobileNavActions = function() {
     jQuery('.nav .close, .nav-inverse .close').on('click', function () {
         jQuery('.header .nav, .header .nav-inverse').removeClass('active');
     });
+
 };
+
+
 
 var geocoder;
 var map;

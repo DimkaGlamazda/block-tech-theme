@@ -9,7 +9,7 @@
 <section class="cases-section-1">
 	<div class="case-image-left">
 		<div class="image">
-			<img src="<?=Media::contentURI('montreal.png')?>" alt="Montreal">
+			<img data-is-loaded="false" src="<?=Media::contentURI('montreal.png')?>" alt="Montreal">
 		</div>
 		<div class="text">
 			<h5>Case 1.</h5>
@@ -33,14 +33,14 @@
 			<a href="/logistic">続きを読む</a>
 		</div>
 		<div class="image">
-			<img src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
+			<img data-is-loaded="false" src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
 		</div>
 	</div>
 </section>
 <section class="cases-section-3">
 	<div class="case-image-left">
 		<div class="image">
-			<img src="<?=Media::contentURI('future_journalism.png')?>" alt="Future journalism">
+			<img data-is-loaded="false" src="<?=Media::contentURI('future_journalism.png')?>" alt="Future journalism">
 		</div>
 		<div class="text">
 			<h5>Case 3.</h5>
@@ -62,7 +62,7 @@
 		</div>
 
 		<div class="image">
-			<img src="<?=Media::contentURI('sea_boat.png')?>" alt="Sea and boat">
+			<img data-is-loaded="false" src="<?=Media::contentURI('sea_boat.png')?>" alt="Sea and boat">
 		</div>
 	</div>
 </section>

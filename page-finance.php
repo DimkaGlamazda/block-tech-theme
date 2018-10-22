@@ -4,7 +4,7 @@
 		<div class="body">
 			<h1>Finance</h1>
 			<h2 class="news-title">金融業におけるブロックチェーン活用事例</h2>
-			<img class="finance-header-bg-img" src="<?=Media::contentURI('montreal-2.jpeg')?>" alt="Montreal">
+			<img data-is-loaded="false" class="finance-header-bg-img" src="<?=Media::contentURI('montreal-2.jpeg')?>" alt="Montreal">
 		</div>
 	</header>
 	<section class="section-body">

@@ -127,6 +127,7 @@
 			    -ms-transform: rotate(-135deg);
 			    transform: rotate(-135deg);
 			}
+
 			&:after {
 				left: 15px;
 			    width: 26px;
@@ -172,6 +173,24 @@
 				}
 			}
 
+			&:hover .date:after {
+
+
+				@include animation-name(moveRight);
+
+				@include keyframes(moveRight) {
+					from {
+						right:-115px;
+					}
+					50% {
+						right:-115px;
+					}
+					to {
+						right:-115px;
+					}
+				}
+			}
+
 			.description {
 				width: 70%;
 				padding:10px;
@@ -180,6 +199,7 @@
 					font-weight:bold;
 				}
 			}
+
 		}
 	}
 }

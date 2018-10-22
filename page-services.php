@@ -26,7 +26,7 @@
         <p>
           インターネットにも匹敵するほどの大発明と言われる「ブロックチェーン」。IoTやAIなど最新のテクノロジートレンドと融合し、流通、認証、情報管理、セキュリティ、シェアリング、資金調達など、あらゆる分野を変えていくと言われています。日本国内でも、ここ数年でビジネスへの実用化に向けて、技術開発や概念実証が繰り返され、徐々にできること、できないことが見えつつあります。BlockTeckJapanのセミナーでは、ブロックチェーンの基本的な概念やユースケースをご紹介するとともに、実際のビジネスにブロックチェーンを実装する方法について解説しています。</p>
         <div class="side">
-          <img src="<?=Media::iconURI('blockchain.png')?>" alt="Block chain">
+          <img data-is-loaded="false" src="<?=Media::iconURI('blockchain.png')?>" alt="Block chain">
         </div>
       </div>
     </article>
@@ -58,7 +58,7 @@
     <h2 class="section-title">セミナー講師紹介</h2>
     <div class="member">
       <div class="image">
-        <img src="<?=Media::staffURI('boris-otonicar.png')?>" alt="Boris Otonicar">
+        <img data-is-loaded="false" src="<?=Media::staffURI('boris-otonicar.png')?>" alt="Boris Otonicar">
       </div>
       <div class="content">
         <div>
@@ -75,7 +75,7 @@
     </div>
     <div class="member">
       <div class="image">
-        <img src="<?=Media::staffURI('bogdan-fiedur.png')?>" alt="Bogdan Fiedur">
+        <img data-is-loaded="false" src="<?=Media::staffURI('bogdan-fiedur.png')?>" alt="Bogdan Fiedur">
       </div>
       <div class="content">
         <div>
@@ -92,7 +92,7 @@
     </div>
     <div class="member">
       <div class="image">
-        <img src="<?=Media::staffURI('vlad-arbatov.png')?>" alt="Vlad Arbatov">
+        <img data-is-loaded="false" src="<?=Media::staffURI('vlad-arbatov.png')?>" alt="Vlad Arbatov">
       </div>
       <div class="content">
         <div>
@@ -109,7 +109,7 @@
     </div>
     <div class="member">
       <div class="image">
-        <img src="<?=Media::staffURI('maria-mavrekh.png')?>" alt="Maria Mavrekh">
+        <img data-is-loaded="false" src="<?=Media::staffURI('maria-mavrekh.png')?>" alt="Maria Mavrekh">
       </div>
       <div class="content">
         <div>
@@ -140,10 +140,10 @@
       <article>
         <h3>オンライン学習サービスの開発</h3>
         <p>当社では、オンライン学習や教育プログラムを提供している企業のために、プラットフォームの開発やサービス内容のコンサルティングを行っています。学習のゴール設定、つまり、どんな人材を育成したいか、によって学ぶ内容が異なります。例えば、サイバーセキュリティの人材育成では、学ぶべきカテゴリは無数にありますが、学んだ内容が必ずしも実際の現場業務に役立つとは限らず、あまり効率的とは言えません。そのため、御社が提供したい教育サービスの目的と内容をしっかりヒアリングし、それに沿ったプラットフォームの開発を行います。</p>
-        <img src="<?=Media::contentURI('man_laptop.jpg')?>" alt="man at laptop">
+        <img data-is-loaded="false" src="<?=Media::contentURI('man_laptop.jpg')?>" alt="man at laptop">
       </article>
       <article>
-        <img src="<?=Media::contentURI('man_suitcase.jpg')?>" alt="man with suitcase">
+        <img data-is-loaded="false" src="<?=Media::contentURI('man_suitcase.jpg')?>" alt="man with suitcase">
         <h3>オンサイト教育</h3>
         <p>BlockTechJapanでは、お客様社内への講師の派遣や教室での講義についても対応しています。当社の講師達は、２か月から半年の間にかけて、組織内エンジニアへの教育はもちろん、またサポート役として現場が抱えるビジネス課題の解決にも参加いたします。長年の開発経験をもつ優秀なブロックチェーン技術者による実践的な教育を行うことで、組織内の技術力が向上するだけではなく、プロジェクトの完成時間を大幅に短縮することもできます。オンサイト学習は、IT人材不足に悩む企業のお客様に大変人気がある教育サービスとなっております。</p>
       </article>
@@ -156,17 +156,17 @@
     <h3>カリキュラム例</h3>
     <div class="content">
       <div class="item">
-        <img src="<?=Media::iconURI('cyber_security.svg')?>" alt="サイバーセキュリティ">
+        <img data-is-loaded="false" src="<?=Media::iconURI('cyber_security.svg')?>" alt="サイバーセキュリティ">
         <h4>サイバーセキュリティ</h4>
         <p>本カリキュラムは、サイバーセキュリティとブロックチェーンの基礎知識を身につけることを目的としたものとなっており、今後のキャリアや職務を見据えた知識とスキルを身につけることを目的としています。実践的なセキュリティ対策や解析手法を身につけ、即戦力になる人材を目指しながら、情報セキュリティの基礎からブロックチェーンを実装するプロセスまでを体系的に学習できるように設計されています。</p>
       </div>
       <div class="item">
-        <img src="<?=Media::iconURI('iot.svg')?>" alt="IoT">
+        <img data-is-loaded="false" src="<?=Media::iconURI('iot.svg')?>" alt="IoT">
         <h4>IoT</h4>
         <p>IoT時代のモノづくりに必須となるビジネスプロセスのデジタル・トランスフォーメーションやあらゆる機器のネットワーク化、データ活用テクノロジーに必要な知識とスキルの修得に留まらず、第四次産業革命と呼ばれる「IoTによるビジネスの革新」を担うエンジニアの育成を目指していくカリキュラムとなります。モノづくりの全過程からデジタル情報を集め、プロセスを最適化し、最大限の価値を顧客に提供したい、という企業様におすすめのコースです。</p>
       </div>
       <div class="item">
-        <img src="<?=Media::iconURI('smart_contract.svg')?>" alt="スマートコントラクト">
+        <img data-is-loaded="false" src="<?=Media::iconURI('smart_contract.svg')?>" alt="スマートコントラクト">
         <h4>スマートコントラクト</h4>
         <p>世界的にスマートコントラクトの利用拡大が進んでおり、日本でもメガバンクが実証実験を実施するなど注目が集まっています。本カリキュラムでは、仮想通貨の基礎的内容を紹介した後、ブロックチェーンの仕組みを基礎から学びます。また、応用技術としてスマートコントラクトという仕組みについて、Ethereumの開発言語「Solidity」を使ってスマートコントラクトを開発する方法を学びます。</p>
       </div>
@@ -183,7 +183,7 @@
     <div class="part-1">
       <div class="content">
         <div class="image">
-          <img src="<?=Media::contentURI('golden_gate_bridge.png')?>" alt="先進テクノロジーに特化した開発サービス">
+          <img data-is-loaded="false" src="<?=Media::contentURI('golden_gate_bridge.png')?>" alt="先進テクノロジーに特化した開発サービス">
         </div>
         <article class="text">
           <h4>先進テクノロジーに特化した開発サービス</h4>
@@ -206,7 +206,7 @@
           <p>単なるヒト出しに終わらない、最適な組織体制の構築を実現します。単なる人的リソース不足、スキル不足の解消ではなく、お客様の成長につながるアウトソーシング体制を提案します。開発、運用、システムサービスなどの各分野において、経験とスキルを兼ね備えた人材をお客様の組織にベストマッチさせることで、組織力の強化を図ります。</p>
         </article>
         <div class="image">
-          <img src="<?=Media::contentURI('coworking_space.png')?>" alt="先進テクノロジーに特化した開発サービス">
+          <img data-is-loaded="false" src="<?=Media::contentURI('coworking_space.png')?>" alt="先進テクノロジーに特化した開発サービス">
         </div>
       </div>
       <span class="bg-1"></span>
@@ -223,17 +223,17 @@
       <p>BlockTechJapanは、過去の実績に裏付けされたデベロップメントとアナリティクスのスキルを駆使した、お客様の課題解決、成果獲得を実現するための多様なIT開発サービスを提供します。</p>
     </div>
     <div class="part">
-      <img src="<?=Media::iconURI('it-outsourcing.svg')?>" alt="ITアウトソーシング">
+      <img data-is-loaded="false" src="<?=Media::iconURI('it-outsourcing.svg')?>" alt="ITアウトソーシング">
       <h4>ITアウトソーシング</h4>
       <p>品質、信頼性およびセキュリティの向上や、合理化・最適化によるコスト削減を図りつつ、柔軟性に富みかつ変化に迅速対応可能なITソリューションを実現します。</p>
     </div>
     <div class="part">
-      <img src="<?=Media::iconURI('ar.svg')?>" alt="AR(拡張現実)">
+      <img data-is-loaded="false" src="<?=Media::iconURI('ar.svg')?>" alt="AR(拡張現実)">
       <h4>AR(拡張現実)</h4>
       <p>ハイクオリティなARをプロジェクトの段階からトータルでサポートします。デジタル技術とデザイン力を駆使し、モバイルから、ゲームや業務用まで、多様な仮想現実アプリケーションの制作を行っています。</p>
     </div>
     <div class="part">
-      <img src="<?=Media::iconURI('ai.svg')?>" alt="AI (人工知能)">
+      <img data-is-loaded="false" src="<?=Media::iconURI('ai.svg')?>" alt="AI (人工知能)">
       <h4>AI (人工知能)</h4>
       <p>人工知能、機械学習、ディープラーニング等様々な技術を用い企業様の業務やサービスのご支援に注力し、ビッグデータプロジェクトの成功に必要な開発サービスを提供しています。</p>
     </div>

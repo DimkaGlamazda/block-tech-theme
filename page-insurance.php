@@ -4,7 +4,7 @@
 	<div class="body">
 		<h1>Insurance</h1>
 		<h2 class="news-title">保険業界に浸透するブロックチェーン</h2>
-		<img class="insurance-header-bg-img" src="<?=Media::contentURI('sea_boat.png')?>" alt="Sea and boat">
+		<img data-is-loaded="false" class="insurance-header-bg-img" src="<?=Media::contentURI('sea_boat.png')?>" alt="Sea and boat">
 	</div>
 </header>
 <section class="section-body">
@@ -21,12 +21,12 @@
 			<strong>- 透明性の向上</strong>
 			<p>ブロックチェーン上の分散化された取引では、資産の移動履歴や取引相手の倒産リスクが可視化されるため、保険会社と顧客双方にとって、契約の信頼性と安全性が確保されます。</p>
 			<p>保険業界には伝統的に煩雑な管理、ペーパーワーク、不信感が付きものでした。しかしブロックチェーンを組み込むことで、業務運営の効率性、安全性、透明性がもたらされ、そのようなイメージを一新することが可能です。以下では、すでにブロックチェーンを実装している保険業界内の取り組みをご紹介します。</p>
-			<img src="<?=Media::contentURI('crosswalk.jpg')?>" alt="Crosswalk">
+			<img data-is-loaded="false" src="<?=Media::contentURI('crosswalk.jpg')?>" alt="Crosswalk">
 		</article>
 		<article>
 			<h3>保険業界におけるブロックチェーンの活用事例</h3>
 			<h4>- アメリカン・インターナショナル・グループ </h4>
-			<img class="cases-4-logo" src="<?=Media::contentURI('companies/kiss.png')?>" alt="アメリカン・インターナショナル・グループ">
+			<img data-is-loaded="false" class="cases-4-logo" src="<?=Media::contentURI('companies/kiss.png')?>" alt="アメリカン・インターナショナル・グループ">
 			<h6><strong>本社</strong>：ニューヨーク</h6>
 			<p>概要：保険会社のAmerican International Group Inc.（AIG）は、International Business Machines Corp.（IBM）と連携し、ブロックチェーンを利用して複雑な国際補償を管理する「スマートコントラクト保険契約」を開発しました。</p>
 			<h6>ブロックチェーン ネットワーク：ビットコイン</h6>
@@ -34,7 +34,7 @@
 		</article>
 		<article>
 			<h4>- FidentiaX</h4>
-			<img class="cases-4-logo" src="<?=Media::contentURI('companies/fidentiax.png')?>" alt="fidentiax">
+			<img data-is-loaded="false" class="cases-4-logo" src="<?=Media::contentURI('companies/fidentiax.png')?>" alt="fidentiax">
 			<h5><strong>本社</strong>：シンガポール</h5>
 			<p><strong>概要</strong>：「世界初の取引可能な保険契約のマーケットプレイス」であるFidentiaXは、ブロックチェーン技術の利用を通して、一般大衆向けに保険契約の取引市場と保管場所を確立したいと考えています。</p>
 			<h5>ブロックチェーン ネットワーク：イーサリアム</h5>
@@ -42,7 +42,7 @@
 		</article>
 		<article>
 			<h4>- Swiss Re</h4>
-			<img class="cases-4-logo" src="<?=Media::contentURI('companies/kisspng-swiss.png')?>" alt="Swiss Re">
+			<img data-is-loaded="false" class="cases-4-logo" src="<?=Media::contentURI('companies/kisspng-swiss.png')?>" alt="Swiss Re">
 			<h5><strong>本社</strong>：チューリッヒ</h5>
 			<p><strong>概要</strong>：再保険、保険、および保険をベースとしたリスク移転サービスの大手卸売販売業者Swiss Reは、保険業界におけるブロックチェーン技術の利用の組み込みとその評価を行うため、ヨーロッパの大手保険業者および再保険業者15社（Achmea、Aegon、Ageas、Allianz、Generali、Hannover Re、Liberty Mutual、Munich Re、RGA、SCOR、損保ジャパン日本興亜、東京海上ホールディングス、XL Catlin、およびZurich Insurance Group）で提携を結びました。この提携によるブロックチェーン保険イニシアチブ（B3i）は、保険業界におけるブロックチェーン技術の採用に関し、保険会社や再保険会社を教育したいと考えています。B3iはブロックチェーンの知識を交換するためのプラットフォームの役割を果たし、実験的な使用事例に関する研究や情報へのアクセスを提供します。しかしまだ今のところは、業界内の個別企業での使用事例しか存在しません。B3iは業界全体、特に顧客にとって実行可能なツールとしてのブロックチェーンの導入を評価することで、保険バリューチェーン全体での幅広いブロックチェーンの採用促進に取り組んでいます。また、共通の基準および実践を用いた保険取引の、効率的で現代的な管理を心に描いています。この目標に向け、B3iはスマートコントラクト管理システムを開発し、顧客に対するサービスのスピード、効率性、安全性を向上させる方法としての、分散型台帳技術の可能性を調査してきました。</p>
 			<h5>ブロックチェーン ネットワーク：イーサリアム</h5>
@@ -50,14 +50,14 @@
 		</article>
 		<article>
 			<h4>- Sofocle</h4>
-			<img class="cases-4-logo" src="<?=Media::contentURI('companies/sofoclelogo.svg')?>" alt="Sofocle">
+			<img data-is-loaded="false" class="cases-4-logo" src="<?=Media::contentURI('companies/sofoclelogo.svg')?>" alt="Sofocle">
 			<h5>本社：ロンドン</h5>
 			<p>概要：Sofocleはスマートコントラクト、AI、モバイルアプリを通してブロックチェーン技術を採用し、保険プロセスを自動化しています。顧客があらゆる関連書類をモバイルアプリ経由でアップロードできるようにすることで、ペーパーワークを最少化します。スマートコントラクトの利用は、精算プロセスの大幅な効率化とスピードアップを実現します。保険請求代理人は、リアルタイムでブロックチェーンに記録される保険請求を検証することができます。スマートコントラクトが外部データソースによる所定の条件（トリガー）の検証を可能にし、検証が終われば顧客は請求した保険金を自動的に受け取ります。</p>
 			<h5>ブロックチェーン ネットワーク：ビットコイン</h5>
 		</article>
 		<article>
 			<h4>- Dynamis</h4>
-			<img class="cases-4-logo" src="<?=Media::contentURI('companies/dynamis.png')?>" alt="Dynamis">
+			<img data-is-loaded="false" class="cases-4-logo" src="<?=Media::contentURI('companies/dynamis.png')?>" alt="Dynamis">
 			<h5>本社：ベルファスト</h5>
 			<p>概要：イーサリアムをベースとしたDynamisのプラットフォームは、LinkedInネットワークを信用評価システムとして利用し、個人間の補助的な失業保険を提供しています。新たな保険契約の申請があると、申請者の身元と雇用状況がLinkedinを通して検証されます。保険請求者は、Linkedinでの繋がりを通して職を探していることを証明することもできます。参加者はソーシャルネットワーク内で自らのソーシャル資本を使うことにより、新たな保険契約を獲得したり、新たな保険金請求を開始したりすることができます。</p>
 			<h5>ブロックチェーン ネットワーク：イーサリアムおよびビットコイン</h5>

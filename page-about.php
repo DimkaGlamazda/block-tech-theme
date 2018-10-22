@@ -106,7 +106,7 @@
         <a href="//www.dbic.jp/">サイトを見る</a>
       </div>
       <div class="image">
-        <img src="<?=Media::contentURI('partner.png')?>" alt="DBIC">
+        <img data-is-loaded="false" src="<?=Media::contentURI('partner.png')?>" alt="DBIC">
       </div>
     </div>
     <div class="section-end">さらに表示</div>
@@ -115,7 +115,7 @@
 
 <section class="about-section-5">
   <div class="wrapper">
-    <img src="<?=Media::contentURI('conversation.png')?>" alt="message">
+    <img data-is-loaded="false" src="<?=Media::contentURI('conversation.png')?>" alt="message">
     <h4>私たちのビジョンとミッション</h4>
     <p>
       <span><strong>CEO サーシャ・コフマンが語る、</strong></span>

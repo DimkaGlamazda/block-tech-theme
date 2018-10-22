@@ -69,6 +69,7 @@
 
 @include media-breakpoint-down(sm) {
 	.cases-section-2 {
+
 		margin-bottom: 0px;
 		.case-image-right {
 			height:auto;
@@ -78,10 +79,11 @@
 
 			.image {
 				width:100%;
+				height: 300px;
 
 				img {
-					height:auto;
-					width:100%;
+					height:100%;
+					width:auto;
 				}
 			}
 

@@ -17,30 +17,30 @@
 		background-color: rgba(0, 146, 255, 1);
 
 		.content-wrapper {
+			@include flex(center, center, column);
 			position: relative;
 			width: 1200px;
 			height:100%;
 			margin:auto;
 			z-index: 6;
 			color: #fff;
-			@include flex(center, center, column);
-			
+
 			span {
 				display:block;
 			}
 
 			h5 {
-				width:400px;
 				@include font-size(20px);
-				font-family: $open-sans, sans-serif;
-				margin-bottom:30px;
+				width : 400px;
+				font-family : $open-sans, sans-serif;
+				margin-bottom : 30px;
 			}
 
 			h4 {
-				width:400px;
+				width : 400px;
 				@include font-size(22px);
-				font-weight:normal;
-				margin-bottom:20px;
+				font-weight : normal;
+				margin-bottom : 20px;
 
 				a {
 					color:#fff;
@@ -163,6 +163,7 @@
 			position: absolute;
 			width:70%;
 			height:auto;
+			min-height: 100%;
 			z-index: 1;
 			@include transform(scale3d(1, 1, 1));
 			@include transition(all .4s ease);
@@ -182,14 +183,15 @@
 		}
 
 		.img-left img {
+			top:0;
 			left: -60px;
-    		bottom:0;
 		}
 
 		.img-right img {
 			right:0;
 			bottom:0;
-			height: 100%;
+			height: auto;
+			min-height: 100%;
 		}
 	}
 }

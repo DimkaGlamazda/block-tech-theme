@@ -115,7 +115,6 @@
 		img {
 			@include position(absolute, 10px, false, false, 0);
 			@include block-size(290px, 60px);
-			display: none;
 		}
 	}
 
@@ -126,8 +125,15 @@
 		z-index:5;
 	}
 
-	.nav.active, .nav-inversev.active {
+	.nav.active, .nav-inverse.active {
+		display: none;
 		@include position(fixed, 0, 0, 0, 0);
+
+		.logotype {
+			img {
+				display: none;
+			}
+		}
 	}
 
 	.mobile-header, .mobile-header-inverse {
@@ -175,9 +181,21 @@
 			color: #000;
 		}
 	}
+
+	.menu li {
+		a {
+			&:hover {
+				color: #fff;
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 .nav.active, .nav-inverse.active {
+	display: none;
 	@include position(fixed, 0, 0, 0, 0);
 	width:100%;
 	@include flex(flex-start, flex-start, column);
