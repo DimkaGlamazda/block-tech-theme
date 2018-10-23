@@ -22,10 +22,6 @@ while ( have_posts() ) : the_post();
     <div class="news-wrapper">
 		<?php the_content() ?>
     </div>
-    <div class="news-bg-1"></div>
-    <div class="news-bg-2"></div>
-    <div class="news-bg-3"></div>
-    <div class="news-bg-4"></div>
   </section>
 	<?php
     $news = News::getNews( 9 );

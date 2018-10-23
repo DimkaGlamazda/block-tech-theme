@@ -1,0 +1,135 @@
+.home-ability-section {
+  background-color: rgba(34, 42, 74, 1);
+  margin: 10px auto 100px;
+  .h-section-part-2 {
+    .h-section-part-2-body {
+
+      @extend .wrapper;
+      @include flex();
+      padding: 90px 0;
+      color:#fff;
+
+      div {
+        width: 50%
+      }
+
+      h4 {
+        @include font-size(22px);
+        position:relative;
+        width: 90%;
+        text-align: center;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        margin-top: 8%;
+        margin-right: 10%;
+
+        &:after {
+          @include calc(left, 70% / 2);
+          @include calc(right, 70% / 2);
+          content: "";
+          position:absolute;
+          width: 30%;
+          bottom:0;
+          height: 2px;
+          background-color: rgba(0, 146, 255, 1);
+        }
+
+        span {
+          display:block;
+        }
+      }
+
+      p {
+        @include font-size(16px);
+        width: 90%;
+        margin-right: 10%;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 40px;
+      }
+
+      a {
+
+        @extend .transparent-btn;
+        display: block;
+        width: 35%;
+
+        margin: 40px auto 0;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-between(sm, lg) {
+  .home-ability-section {
+    .section-body {
+      width: 1200px;
+
+      .h-section-part-2 {
+
+        background-color: rgba(34, 42, 74, 1);
+
+        .h-section-part-2-body {
+          width: 1200px;
+        }
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  .home-ability-section {
+    width: 100%;
+    .section-body {
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom:0;
+
+      .h-section-part-2 {
+        margin:10px 0 25px;
+        width: 100%;
+        .h-section-part-2-body {
+          width: 100%;
+          @include flex(center, center, column-reverse);
+          padding:20px 0;
+
+          div {
+            width:95%;
+            margin:auto;
+          }
+
+          h4 {
+            @include font-size(19px);
+            line-height: 27px;
+            width:100%;
+            margin-right:0;
+            padding: 0 10px 30px;
+          }
+
+          p {
+            @include font-size(16px);
+            line-height: 27px;
+            padding: 30px 10px 0;
+            width:100%;
+            margin-right:0;
+          }
+
+          a {
+            width:100%;
+          }
+
+          .h-section-part-2-body-img {
+            overflow:hidden;
+            img {
+              width:100%;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}

@@ -232,15 +232,17 @@
 	.h-section-3 {
 		margin: 0 0 20px;
 
+		.section-body {
+			width: 100%;
+		}
+
 		.section-title {
 			margin-bottom: 30px;
 		}
 
 		.h-section-3-row {
 
-			.section-body {
-				width: 100%;
-			}
+
 			height: auto;
 			background-color: rgba(0, 146, 255, 1);
 			.img-left, .img-right {
@@ -266,7 +268,6 @@
 				}
 			}
 
-		
 			.right-content, .right-content.view, .left-content, .left-content.view {
 				position: static;
 				height:auto;
