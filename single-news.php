@@ -40,7 +40,7 @@ while ( have_posts() ) : the_post();
 		<?php foreach ($news as $item): ?>
           <div class="news-slider-item">
             <div class="slider-date"><?=$item['date'] ?></div>
-            <p><?=$item['title'] ?></p>
+            <p><a href="<?=$item['link']?>"><?=$item['title'] ?></a></p>
           </div>
         <?php endforeach; ?>
         </div>

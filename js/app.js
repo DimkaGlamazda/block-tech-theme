@@ -6,6 +6,7 @@ jQuery(function () {
     new HomeUseCasesSectionAnimation();
     new ScrollToOneScreenBottom();
     new MobileNavActions();
+    new ServicesCoursesAnimation();
 
     jQuery('.js-show-interview').on('click', function (e) {
         e.preventDefault();
@@ -30,6 +31,22 @@ jQuery(function () {
         initialize();
     }
 });
+
+
+
+var ServicesCoursesAnimation = function () {
+  jQuery('.courses-js').on('mouseover', function () {
+      var current = this;
+      jQuery('.courses-js').each(function (i, e) {
+          if(current !== e) {
+              jQuery(e).css('opacity', 0.5);
+          }
+      });
+  }).on('mouseleave', function () {
+      jQuery('.courses-js').css('opacity', 1);
+  });
+};
+
 
 var Screen = function() {};
 
@@ -220,7 +237,7 @@ var HomeUseCasesSectionAnimation = function() {
     if(!right.length)
         return;
 
-    var right_start = right.offset().top - jQuery(window).height() / 3;
+    var right_start = right.offset().top + right.height() / 2;
 
     jQuery(window).on("scroll", function() {
         if(window.pageYOffset >= right_start)
@@ -231,7 +248,7 @@ var HomeUseCasesSectionAnimation = function() {
 
     var left = jQuery(".left-content");
 
-    var left_start = left.offset().top - jQuery(window).height() / 3;
+    var left_start = left.offset().top + left.height() / 2;
 
     jQuery(window).on("scroll", function() {
         if(window.pageYOffset >= left_start)
@@ -284,11 +301,11 @@ var ServiceLinesAnimation = function() {
 
     if(!this.screen.isMobile())
     {
-        jQuery(document).on('mouseover', '.h-section-part-1-column img, .h-section-part-1-column a, .h-section-part-1-column p',  function() {
+        jQuery('.h-section-part-1-column img, .h-section-part-1-column a, .h-section-part-1-column p').on('mouseover',  function() {
             jQuery(this).parent().addClass('active');
         });
 
-        jQuery(document).on('mouseout', '.h-section-part-1-column', function () {
+        jQuery(document).on('mouseleave', '.h-section-part-1-column.active', function () {
             jQuery(this).removeClass('active');
         });
     }
@@ -314,15 +331,16 @@ var ServiceLinesAnimation = function() {
 
 
 var AlexSectionScrollAnimation = function () {
+
     var block = jQuery('.home-representative-message-section');
 
     if(!block.length)
         return;
 
-    var start = block.offset().top - jQuery(window).height() / 2;
+    var start = block.offset().top + block.height() / 4;
 
     jQuery(window).on("scroll", function() {
-        if(window.pageYOffset >= start)
+        if(jQuery(window).scrollTop() >= start)
         {
             block.addClass('view');
         }
@@ -364,14 +382,15 @@ var query = new Array('г. Минск, улица Гамарника, 30', 'бу
 var idArr = new Array('mp1', 'mp0');
 
 function initialize() {
-    var coordinates = {'lat': 50.448087, 'lng': 30.425054};
+
+    var coordinates = {'lat': 40.757946, 'lng': -73.992323};
     geocoder = new google.maps.Geocoder();
     var mapOptions = {
             mapTypeControl : false,
             streetViewControl : false,
             fullscreenControl : false,
             center: coordinates,
-            zoom: 4,
+            zoom: 15,
             styles: 
             [
                 {

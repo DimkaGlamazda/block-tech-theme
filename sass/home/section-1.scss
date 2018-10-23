@@ -80,7 +80,7 @@
 
 					.slider-item-overlay {
 						background-color: rgba(0,0,0, .5);
-						@include position(absolute, 0, 0, 0, 0);						
+						@include position(absolute, 0, 0, 0, 5px);
 						@include transition(all 1s ease);
 						height:inherit;
 
@@ -259,7 +259,7 @@
 			height:500px;
 			overflow: hidden;
 			margin-top: 10px;
-			background: url(media/content/city-bg.png) center bottom;
+			background: url(media/content/city-bg.jpg) center bottom;
 			@include background-size(cover);
 
 			.representative-message-section-bg {
@@ -353,7 +353,11 @@
 							position:relative;
 							a {
 								color:#fff;
-								text-decoration:none;
+								text-decoration: none;
+							}
+
+							a:hover {
+								text-decoration: underline;
 							}
 						}
 

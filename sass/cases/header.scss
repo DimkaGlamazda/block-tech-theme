@@ -17,7 +17,7 @@
 
 			&:after {
 				content: "";
-				@include position(absolute, false, 30%, -90%, false);
+				@include position(absolute, false, 30%, -50%, false);
 				width: 40%;
 				height:2px;
 				background-color: $blue;

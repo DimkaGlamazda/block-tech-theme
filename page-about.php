@@ -115,7 +115,7 @@
 
 <section class="about-section-5">
   <div class="wrapper">
-    <img data-is-loaded="false" src="<?=Media::contentURI('conversation.png')?>" alt="message">
+    <img data-is-loaded="false" src="<?=Media::contentURI('conversation.jpg')?>" alt="message">
     <h4>私たちのビジョンとミッション</h4>
     <p>
       <span><strong>CEO サーシャ・コフマンが語る、</strong></span>

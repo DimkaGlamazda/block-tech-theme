@@ -1,5 +1,10 @@
 .about-section-7 {
 
+	.grecaptcha-badge {
+		display: none;
+	}
+
+
 	@extend .wrapper;
 
 	.contact-error-caption {
@@ -95,6 +100,8 @@
 			}
 		}
 	}
+
+
 }
 
 @include media-breakpoint-down(sm) {

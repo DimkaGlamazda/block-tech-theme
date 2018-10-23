@@ -61,7 +61,7 @@ class News
 		  $result[] = [
 		  	'title' => get_the_title(),
 			'date'  => get_the_date( 'Y/m/d' ),
-			'img_src' => get_the_post_thumbnail_url(),
+			'img_src' => get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : Media::iconURI('icon-without-caption.svg'),
 			'link' => get_permalink()
 		  ];
 	  endwhile;

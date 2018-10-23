@@ -33,7 +33,7 @@
 			<a href="/logistic">続きを読む</a>
 		</div>
 		<div class="image">
-			<img data-is-loaded="false" src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
+          <img data-is-loaded="false" src="<?=Media::contentURI('cafe.jpg')?>" alt="Cafe">
 		</div>
 	</div>
 </section>

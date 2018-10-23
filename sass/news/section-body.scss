@@ -40,28 +40,37 @@
 		}
 
 		.use-cases-2-img-2 {
-			width: 30%;
+			width: 400px;
 			float:right;
 			padding: 7px 20px 20px 20px;
 		}
 
 		.use-cases-2-img-3 {
-			width: 45%;
+			width: 400px;
 			float:right;
 			padding: 7px 20px 20px 20px;
 		}
 
-		.use-cases-3-img-1, .use-cases-3-img-2 {
-			width: 30%;
+		.use-cases-3-img-1,
+		.use-cases-3-img-2{
+			width: 400px;
 			float:right;
 			padding: 7px 20px 20px 20px;
 		}
+
+		.cases-finance-side-img-1 {
+			width: 35%;
+			float:right;
+			padding: 7px 20px 20px 20px;
+		}
+
 
 		.cases-4-logo {
 			width:30%;
 		}
 
 		ul  li {
+			@include font-size(15px);
 			padding-bottom: 10px;
 		}
 	}

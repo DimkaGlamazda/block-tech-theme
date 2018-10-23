@@ -34,7 +34,7 @@
               <span>世界を代表するブロックチェーン先駆者が語る、</span>
               <span>ブロックチェーンの最新事例とビジネスに実装する方法。</span>
             </p>
-            <a href="/news/京都工芸繊維大学との「働き方改革」ソリューシ/">詳細はこちら</a>
+            <a href="/news/webサイトをオープンしました/">詳細はこちら</a>
           </div>
           <div class="slide-number">01</div>
         </div>
@@ -47,7 +47,7 @@
         <span class="slider-progres-bar"></span>
       </div>
       <div>
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'bronze-wallpaper.png' )?>" alt="Bronze wallpaper">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'bronze-wallpaper.jpg' )?>" alt="Bronze wallpaper">
         <div class="slider-item-overlay">
           <a href="/finance" class="content-2">
             <h3>金融業向けブロックチェーン応用事例</h3>
@@ -120,6 +120,10 @@
 <section class="h-section-2">
   <h3 class="section-title">SERVICE LINES</h3>
   <div class="section-body">
+    <div class="h-section-part-0">
+      <h4>提供サービス</h4>
+      <p>BlockTechJapanでは、ブロックチェーンの紹介、教育、開発のサービスをノンストップで提供することにより、日本のビジネスが今日必要としているブロックチェーン・イノベーションを起こすためのサービスを提供します。当社には、ブロックチェーンだけではなく、サイバーセキュリティ、IoT、人工知能などの分野において優れたスキルと実績をもつプロフェッショナルも多数在籍しており、変化し続ける社会に求めれらている的確なソリューションを提供するための強力な開発体制が整えられています。</p>
+    </div>
     <div class="h-section-part-1">
       <div class="h-section-part-1-column">
         <img data-is-loaded="false" src="<?=Media::contentURI( 'conference.png' )?>" alt="Conference">
@@ -168,7 +172,7 @@
   <div class="section-body">
     <div class="h-section-3-row">
       <div class="img-left">
-        <img data-is-loaded="false" src="<?=Media::contentURI('montreal.png')?>" alt="Montreal">
+        <img data-is-loaded="false" src="<?=Media::contentURI('montreal.jpg')?>" alt="Montreal">
         <div class="overlay"></div>
       </div>
       <div class="right-content">
@@ -183,7 +187,7 @@
     </div>
     <div class="h-section-3-row">
       <div class="img-right">
-        <img data-is-loaded="false" src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
+        <img data-is-loaded="false" src="<?=Media::contentURI('cafe.jpg')?>" alt="Cafe">
         <div class="overlay"></div>
       </div>
       <div class="left-content">

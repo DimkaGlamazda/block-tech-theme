@@ -84,6 +84,7 @@
 			.bg-1 {
 				@include position(absolute, 0, 0, 0, 26%);
 				@include transform(rotate(-57deg));
+				height: 10%;
 			}
 
 			.bg-2 {
@@ -104,6 +105,8 @@
 			.bg-1 {
 				@include position(absolute, 0, 0, 0, 13%);
 				@include transform(rotate(-75deg));
+				height: 60%;
+				top:-50%;
 			}
 
 			.bg-2 {
@@ -127,6 +130,8 @@
 			.bg-1 {
 				@include position(absolute, 0, 0, 0, -26%);
 				@include transform(rotate(57deg));
+				height: 10%;
+				top:-50%;
 			}
 
 			.bg-2 {
@@ -146,6 +151,8 @@
 			.bg-1 {
 				@include position(absolute, 0, 0, 0, -13%);
 				@include transform(rotate(75deg));
+				height: 60%;
+				top:-50%;
 			}
 
 			.bg-2 {
@@ -161,7 +168,7 @@
 
 		.img-left img, .img-right img {
 			position: absolute;
-			width:70%;
+			width:75%;
 			height:auto;
 			min-height: 100%;
 			z-index: 1;

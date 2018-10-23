@@ -1,7 +1,6 @@
-.header-news {
-
+.header-news,
+.use-case-header {
 	.body {
-
 		position:relative;
 		overflow:hidden;
 
@@ -20,6 +19,10 @@
 			z-index: 4;
 			margin-bottom:80px;
 			text-align: center;
+
+			span {
+				display: block;
+			}
 		}
 
 		.news-date {
@@ -48,9 +51,21 @@
 		img.iot-header-bg-img {
 			@include position(absolute, false, 0, -50%, 0);
 		}
+	}
+}
 
+.header-news {
+	.body {
 		background: url('media/content/business_writing.png') center 30% no-repeat;
 		@include background-size(cover);
+	}
+}
+
+.use-case-header {
+	.body {
+		h1 {
+			margin: 155px 0 50px;
+		}
 	}
 }
 
@@ -61,7 +76,8 @@
 }
 
 @include media-breakpoint-down(sm) {
-	.header-news {
+	.header-news,
+	.use-case-header-body {
 		width: 100%;
 		.body {
 			width:100%;
@@ -105,6 +121,10 @@
         		padding: 0 25px;
         		margin-bottom:0;
         		text-align: left;
+
+				span {
+					display: block;
+				}
     		}
 
     		.news-date {

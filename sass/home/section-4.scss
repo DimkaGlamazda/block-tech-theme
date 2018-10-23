@@ -18,8 +18,10 @@
 			position:relative;
 			
 			img {
-				display:block;
-				width:100%;
+				display: block;
+				width: auto;
+				max-height: 100%;
+				margin: auto;
 			}
 
 			&:after {
@@ -31,9 +33,9 @@
 			}
 		}
 
-		&:hover .img:after {
-			background-color: rgba(0, 0, 0, .4);
-		}
+		//&:hover .img:after {
+		//	background-color: rgba(0, 0, 0, .4);
+		//}
 
 		.date {
 			position: relative;
