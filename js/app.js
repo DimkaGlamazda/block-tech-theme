@@ -30,6 +30,11 @@ jQuery(function () {
     if (jQuery('#map').length) {
         initialize();
     }
+
+
+    jQuery(window).on('scroll', function () {
+        BlockAnimation.init();
+    });
 });
 
 
@@ -138,8 +143,6 @@ var PreLoader = function() {
                     }
                 });
         }
-
-
     }
 
 };
@@ -248,7 +251,7 @@ var HomeUseCasesSectionAnimation = function() {
 
     var left = jQuery(".left-content");
 
-    var left_start = left.offset().top + left.height() / 2;
+    var left_start = left.offset().top - left.height();
 
     jQuery(window).on("scroll", function() {
         if(window.pageYOffset >= left_start)
@@ -591,4 +594,30 @@ function initialize() {
         });
     }
 
-  
+var BlockAnimation = {
+
+    triggerContainer: '[data-css-animate=trigger]',
+    actionType: 'visible animated fadeInUp',
+
+    init: function () {
+
+        if (jQuery(window).width() <= 680) {
+            return false;
+        }
+
+        var self = this;
+
+        jQuery.each(jQuery(this.triggerContainer), function (i, e) {
+
+            var elem = jQuery(e);
+            var w_top = jQuery(window).scrollTop() + jQuery(window).height();
+            var e_top = elem.offset().top;
+
+            elem.addClass('hidden');
+
+            if (e_top < w_top) {
+                elem.addClass(self.actionType);
+            }
+        });
+    }
+};

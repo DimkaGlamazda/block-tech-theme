@@ -4,7 +4,7 @@
 	<div class="body">
 		<h1>Logistics</h1>
 		<h2 class="news-title">物流を変え、コーヒー農家を守る<span>スターバックスとブロックチェーン</span></h2>
-		<img data-is-loaded="false" class="logistic-header-bg-img" src="<?=Media::contentURI('cafe.png')?>" alt="Cafe">
+		<img data-is-loaded="false" class="logistic-header-bg-img" src="<?=Media::contentURI('cafe.jpg')?>" alt="Cafe">
 	</div>
 </header>
 <section class="section-body">

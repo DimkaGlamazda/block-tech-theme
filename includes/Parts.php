@@ -14,11 +14,12 @@ class Parts
     <?php
   }
 
-  public static function getHeader( $inverse = false )
+  public static function getHeader( $inverse = false, $mobileHeader = true)
   {
     $nav_class = $inverse ? 'nav-inverse' : 'nav';
     $nav_mobile = $inverse ? 'mobile-header-inverse' : 'mobile-header';
     $nav_logo = $inverse ? 'logo-inverse.svg' : 'logo.svg';
+
     ?>
     <nav class="<?=$nav_class?>">
       <a class="logotype" href="/">
@@ -30,15 +31,16 @@ class Parts
       </div>
       <div class="close"></div>
     </nav>
-
-    <div class="<?=$nav_mobile?>">
-      <h6>BlockTechJapan</h6>
-      <div class="button-nav">
-        <span></span>
-        <span></span>
-        <span></span>
+    <?php if($mobileHeader): ?>
+      <div class="<?=$nav_mobile?>">
+        <h6>BlockTechJapan</h6>
+        <div class="button-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </div>
+    <?php endif; ?>
     <?php
   }
 }

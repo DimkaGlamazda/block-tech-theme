@@ -1,9 +1,10 @@
 <?php get_header() ?>
-<header class="header header-news">
+<header class="header use-case-header">
 	<?php Parts::getHeader(true) ?>
 	<div class="body">
 		<h1>Compliance</h1>
 		<h2 class="news-title">コンプライアンス</h2>
+        <img class="iot-header-bg-img" src="<?=Media::contentURI('micaela-parente.jpg')?>" alt="Seaside">
 	</div>
 </header>
 <section class="section-body">

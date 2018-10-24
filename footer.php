@@ -1,5 +1,5 @@
 <footer class="footer">
-	<?php Parts::getHeader() ?>
+	<?php Parts::getHeader(false, false) ?>
 	<div class="end">
 		<div class="policy">
 			<a href="/compliance">コンプライアンス </a>

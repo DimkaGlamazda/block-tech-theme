@@ -147,7 +147,6 @@
         }
 
         p {
-            
             @include font-size(24px);
             line-height: 37px;
             padding-top: 20px;
@@ -158,6 +157,61 @@
         .icon-scroll {
             margin: 0 0 10px -13px;
         }
+
+      .icon-scroll {
+        height: 62px;
+        @include b-radius(4px);
+        @include b-shadow(0, 0, 1px, #acafb1, true);
+        border: 1px solid #acafb1;
+        width: 30px;
+        margin-left: -12px;
+      }
+
+      .icon-scroll:after {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 7px;
+        margin: 1px auto 0 auto;
+        border: 1px solid #acafb1;
+        @include b-radius(50%);
+      }
+
+      .icon-scroll-screen {
+        position: relative;
+        width: 26px;
+        height: 43px;
+        margin: -6px auto 0;
+        border: 1px solid #acafb1;
+      }
+
+      .icon-scroll:before {
+        position: relative;
+        top: 26px;
+        left: 2px;
+      }
+
+      @-webkit-keyframes scroll {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+        }
+      }
     }    
 }
 

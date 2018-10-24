@@ -19,6 +19,7 @@
     </div>
   </div>
 </header>
+
 <section class="h-section-1">
   <h3 class="section-title">Feature</h3>
   <div class="section-body">
@@ -86,29 +87,14 @@
     </div>
   </div>
 </section>
-<section class="home-ability-section">
-    <div class="section-body">
-        <div class="h-section-part-2">
-            <div class="h-section-part-2-body">
-                <div class="h-section-part-2-body-text">
-                    <h4>世界のあり方を根底から変える。<span>そんなブロックチェーンを、あなたのビジネスに。</span></h4>
-                    <p>ブロックチェーンは、組織や業界全体を変革する可能性を秘めています。私たちは、お客様のブロックチェーンへの取り組みをサポートするだけでなく、既存のビジネスプロセスを見直し、改善するためのサービスを提供しています。
-                        <a href="/services">さらに詳しく</a></p>
-                </div>
-                <div class="h-section-part-2-body-img">
-                    <img data-is-loaded="false" src="<?=Media::contentURI( 'office.jpg' )?>" alt="Office">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="h-section-2">
   <h3 class="section-title">SERVICE LINES</h3>
   <div class="section-body">
     <div class="h-section-part-0">
       <h4>提供サービス</h4>
-      <p>BlockTechJapanでは、ブロックチェーンの紹介、教育、開発のサービスをノンストップで提供することにより、日本のビジネスが今日必要としているブロックチェーン・イノベーションを起こすためのサービスを提供します。当社には、ブロックチェーンだけではなく、サイバーセキュリティ、IoT、人工知能などの分野において優れたスキルと実績をもつプロフェッショナルも多数在籍しており、変化し続ける社会に求めれらている的確なソリューションを提供するための強力な開発体制が整えられています。</p>
+      <p>BlockTechJapanは、ブロックチェーンのご紹介、教育、開発のサービスをノンストップでご提供することにより、ビジネスが必要としているブロックチェーン・イノベーションの実現をサポートいたします。</p>
+      <p>また、ブロックチェーンだけではなく、サイバーセキュリティやIoT、人工知能などの分野においても優れた開発スキルと実績をもつプロフェッショナルが多数在籍しています。変化していく社会に応えるための強力な開発体制と今までの豊富なノウハウに基づいて、お客様に対して新しい価値とソリューションをご提供しています。</p>
     </div>
     <div class="h-section-part-1">
       <div class="h-section-part-1-column">
@@ -141,37 +127,39 @@
     </div>
   </div>
 </section>
+
 <section class="home-representative-message-section">
-    <div class="representative-message-section-bg">
-        <div class="representative-message-bg-layer layer-1">
-            <div></div>
-        </div>
-        <div class="representative-message-bg-layer layer-2">
-            <div></div>
-        </div>
-        <div class="representative-message-bg-layer layer-3">
-            <div></div>
-        </div>
+  <div class="representative-message-section-bg">
+    <div class="representative-message-bg-layer layer-1">
+      <div></div>
     </div>
-    <div class="representative-message-man-layer">
-        <div class="representative-message-text">
-            <h4>BlockTechJapanは、</h4>
-            <p>日本のビジネスに特化した、</p>
-            <p>世界最高峰のテクノロジーサービスを提供します。</p>
-            <div>
-                <ul>
-                    <li class="before-triangle"><a href="/about#about-section-3">代表メッセージ</a></li>
-                    <li class="before-triangle"><a href="/about">BlockTechJapanとは</a></li>
-                </ul>
-                <ul>
-                    <li>BlockTechJapan CEO</li>
-                    <li class="color-blue">サーシャ・コフマン</li>
-                </ul>
-            </div>
-        </div>
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'home-alex.png' )?>" alt="BlockTechJapan CEO">
+    <div class="representative-message-bg-layer layer-2">
+      <div></div>
     </div>
+    <div class="representative-message-bg-layer layer-3">
+      <div></div>
+    </div>
+  </div>
+  <div class="representative-message-man-layer">
+    <div class="representative-message-text">
+      <h4>BlockTechJapanは、</h4>
+      <p>日本のビジネスに特化した、</p>
+      <p>世界最高峰のテクノロジーサービスを提供します。</p>
+      <div>
+        <ul>
+          <li class="before-triangle"><a href="/about#about-section-3">代表メッセージ</a></li>
+          <li class="before-triangle"><a href="/about">BlockTechJapanとは</a></li>
+        </ul>
+        <ul>
+          <li>BlockTechJapan CEO</li>
+          <li class="color-blue">サーシャ・コフマン</li>
+        </ul>
+      </div>
+    </div>
+    <img data-is-loaded="false" src="<?=Media::contentURI( 'home-alex.png' )?>" alt="BlockTechJapan CEO">
+  </div>
 </section>
+
 <section class="h-section-3">
   <h3 class="section-title">USE CASES</h3>
   <div class="section-body">
@@ -208,6 +196,23 @@
   </div>
 </section>
 
+<section class="home-ability-section">
+    <div class="section-body">
+        <div class="h-section-part-2">
+            <div class="h-section-part-2-body">
+                <div class="h-section-part-2-body-text">
+                    <h4>世界のあり方を根底から変える。<span>そんなブロックチェーンを、あなたのビジネスに。</span></h4>
+                    <p>ブロックチェーンは、組織や業界全体を変革する可能性を秘めています。私たちは、お客様のブロックチェーンへの取り組みをサポートするだけでなく、既存のビジネスプロセスを見直し、改善するためのサービスを提供しています。
+                        <a href="/services">さらに詳しく</a></p>
+                </div>
+                <div class="h-section-part-2-body-img">
+                    <img data-is-loaded="false" src="<?=Media::contentURI( 'office.jpg' )?>" alt="Office">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 $news = News::getNews(5);
 
@@ -217,7 +222,7 @@ if( ! empty($news)):
     <h3 class="section-title">news</h3>
     <div class="section-body">
         <?php foreach($news as $item): ?>
-          <div class="h-news-item">
+          <div class="h-news-item" data-css-animate="trigger">
             <div class="img">
               <img data-is-loaded="false" src="<?=$item['img_src'] ?>" alt="<?=$item['title'] ?>">
             </div>
