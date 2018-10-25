@@ -48,6 +48,7 @@
 					@include position(relative, 232px, false, 0);
 					@include transition(top 550ms cubic-bezier(.23,1,.32,1));
 					height:100%;
+					min-width: 100%;
 					z-index:1;
 				}
 

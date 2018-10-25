@@ -211,7 +211,8 @@
 		&:after {
 			content: "";
 			display: block;
-			@include position(absolute, 0, false, false, 0);
+			@include position(absolute, 100%, false, false, 50%);
+			margin-left:-100px;
 			@include block-size(200px, 41px);
 			background:url('media/icons/logo.svg') center center no-repeat;
 			@include background-size(cover);

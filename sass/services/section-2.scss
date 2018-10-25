@@ -90,7 +90,8 @@
 		.member {
 			flex-direction:column;
 			.image {
-				width: 100%;
+				margin: auto;
+				width: 75%;
 			}
 
 			.content {
@@ -111,7 +112,8 @@
 				margin:20px 0 30px;
 
 				span {
-					width: 48%;
+					float:none;
+					width: 50%;
 					margin: 5px 1%;
 				}
 			}

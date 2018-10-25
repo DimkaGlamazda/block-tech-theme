@@ -113,6 +113,21 @@ body {
 @include media-breakpoint-down(sm) {
 	.header {
 		width: 100%;
+
+		.body {
+			height:300px;
+
+			h1 {
+				@include font-size(40px);
+				margin-top: 70px;
+				margin-bottom: 32px;
+				text-align: center;
+			}
+
+			p {
+				@include font-size(20px);
+			}
+		}
 	}
 }
 

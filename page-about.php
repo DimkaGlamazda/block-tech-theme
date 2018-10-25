@@ -4,6 +4,7 @@
   <div class="body">
     <h1>About us</h1>
     <p>ビジネスを変える、社会を変える、あなたを変える、ブロックチェーンで。</p>
+    <img data-is-loaded="false" class="about-header-image" src="<?=Media::contentURI('staten-island.jpg')?>" alt="Staten island">
   </div>
 </header>
 

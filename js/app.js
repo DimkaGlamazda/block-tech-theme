@@ -1,4 +1,7 @@
 jQuery(function () {
+
+    PreLoader.init();
+
     new Slider();
     new OwlSlider();
     new ServiceLinesAnimation();
@@ -25,7 +28,7 @@ jQuery(function () {
         }    
     });
 
-    new PreLoader();
+
 
     if (jQuery('#map').length) {
         initialize();
@@ -73,79 +76,42 @@ Screen.prototype.isMobile = function () {
     return false;
 };
 
-var PreLoader = function() {
+var PreLoader = {
 
-    this.screen = new Screen();
-    
-    function closePreLoader() {
-        setTimeout(function () {
-            jQuery('.pre-loader').find('img').css('display', 'none');
-            jQuery('.pre-loader').fadeOut( "slow");
-        }, 500);
-    }
-    
-    if(this.screen.isDesctop() && jQuery('#home-video').length)
-    {
-        var vid = document.getElementById("home-video");
+    screen : null,
 
-        if(vid.readyState === 4)
+    init : function () {
+        this.screen = new Screen();
+
+        if(this.screen.isDesctop() && jQuery('#home-video').length)
         {
-            closePreLoader();
-        }
-        else
-        {
-            vid.onloadeddata = function()
+            var vid = document.getElementById("home-video");
+
+            if(vid.readyState === 4)
             {
-                closePreLoader();
-            };
+                this.close();
+            }
+            else
+            {
+                vid.onloadeddata = function()
+                {
+                    PreLoader.close();
+                };
+            }
         }
-    }
-    else
-    {
-        if(jQuery('[data-is-loaded]').length === 0)
-        {
-            closePreLoader();
-        }
-        else
-        {
-            jQuery('[data-is-loaded]').each(function(index, el) {
+    },
 
-                    var mediaItem = jQuery(el);
+    close : function () {
+        var preLoader = jQuery('.pre-loader');
 
-                    var status = el.complete || el.naturalWidth > 0;
-
-                    mediaItem.attr('data-is-loaded', status ? 'true' : 'false');
-
-                    if(status)
-                    {
-                        closePreLoader();
-                    }
-                    else
-                    {
-                        mediaItem.on('load', function () {
-
-                            jQuery(this).attr('data-is-loaded', 'true');
-
-                            var loadStatus = true;
-
-                            jQuery.each(jQuery('[data-is-loaded]'), function(i, e) {
-                                if(jQuery(e).attr('data-is-loaded') === 'false')
-                                {
-                                    loadStatus = false;
-                                }
-                            });
-
-                            if(loadStatus)
-                            {
-                                closePreLoader();
-                            }
-                        });
-                    }
-                });
-        }
+        setTimeout(function () {
+            preLoader.find('img').css('display', 'none');
+            preLoader.fadeOut( "slow");
+        }, 500);
     }
 
 };
+
 
 var Video = function () {
     this.screen = new Screen();
@@ -154,6 +120,10 @@ var Video = function () {
     this.img = this.headerBg.find('img');
     this.header = jQuery('.home-header');
     this.resize();
+
+    if(! this.img.length)
+        PreLoader.close();
+
 };
 
 
@@ -167,17 +137,44 @@ Video.prototype.resize = function() {
 
     if(this.screen.isMobile())
     {
-        this.img.css('width', 'auto');
-        this.header.css('width', "100%");
+        var self = this;
 
-        if(this.img.width() <= jQuery(window).width())
+
+
+        this.img.on('load', function () {
+            self.img.css('width', 'auto');
+            self.header.css('width', "100%");
+
+            if(self.img.width() <= jQuery(window).width())
+            {
+                self.img.css('width', '100%');
+                self.img.css('height', 'auto');
+            }
+
+            self.headerBg.css('height', jQuery(window).height());
+            self.header.css('height', jQuery(window).height());
+
+            self.img.css({
+                'margin-left' : self.img.width() / 2 * -1
+            });
+
+            PreLoader.close();
+        }).ready(function () {
+            PreLoader.close();
+        });
+
+        self.img.css('width', 'auto');
+        self.header.css('width', "100%");
+
+        if(self.img.width() <= jQuery(window).width())
         {
-            this.img.css('width', '100%');
-            this.img.css('height', 'auto');
+            self.img.css('width', '100%');
+            self.img.css('height', 'auto');
         }
 
-        this.headerBg.css('height', jQuery(window).height());
-        this.header.css('height', jQuery(window).height());
+        self.headerBg.css('height', jQuery(window).height());
+        self.header.css('height', jQuery(window).height());
+
     }
     else if(this.screen.isPad())
     {
@@ -194,11 +191,11 @@ Video.prototype.resize = function() {
     }
 
     this.video.css({
-        'margin-left' : this.video.width() / 2 * -1,
+        'margin-left' : this.video.width() / 2 * -1
     });
 
     this.img.css({
-        'margin-left' : this.img.width() / 2 * -1,
+        'margin-left' : this.img.width() / 2 * -1
     });  
 };
 

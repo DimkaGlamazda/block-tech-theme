@@ -60,8 +60,10 @@
 				li {
 					float: left;
 					width:25%;
+					@include flex();
 
 					a {
+						width:69px !important;
 						margin:0;
 					}
 				}
@@ -75,22 +77,22 @@
 		}
 
 		.end {
-			@include flex(center, space-between, column);
+			@include flex(flex-start, space-between, column);
 
 			.policy {
 				width:70%;
-				margin: auto;
+				margin: 0;
 				a {
 					@include font-size(14px);
 					display:block;
-					margin-right: 0px;
+					margin-right: 0;
 					margin-bottom:5px;
 				}
 			}
 
 			.coppyright {
 				width:70%;
-				margin: 10px auto 0;
+				margin: 10px 0 0;
 				color:#B3B8C2;
 			}
 		}
@@ -109,6 +111,12 @@
 					.active {
 						color:#0092ff;
 					}
+
+					a {
+						width: auto;
+						justify-content: flex-start;
+					}
+
 				}
 			}
 
@@ -125,18 +133,18 @@
 		.end {
 			.policy {
 				width:200px;
-				margin: auto;
+				margin: 0;
 				a {
 					@include font-size(14px);
 					display:block;
-					margin-right: 0px;
+					margin-right: 0;
 					margin-bottom:7px;
 				}
 			}
 
 			.coppyright {
 				width:200px;
-				margin: 10px auto 0;
+				margin: 10px 0 0;
 			}
 		}
 	

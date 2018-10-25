@@ -1,6 +1,6 @@
 <?php get_header() ?>
 <div class="h-header-bg">
-  <img data-is-loaded="false" src="<?=Media::contentURI( 'lection-mobile.png' )?>" alt="Heder Lection">
+  <img data-is-loaded="false" src="<?=Media::contentURI( 'lection-mobile.jpg' )?>" alt="Heder Lection">
   <video id="home-video" class="h-header-media" data-js="h-header-bg" autoplay muted loop>
     <source id="mp4" src="<?=Media::contentURI( 'bg-video.mp4' )?>">
   </video>
@@ -26,7 +26,7 @@
     <div class="dots"></div>
     <div class="home-slider">
       <div>
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'digital-background.png' )?>" alt="Digital background">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'digital-background.jpg' )?>" alt="Digital background">
         <div class="slider-item-overlay">
           <div class="content-1">
             <h4>DBIC x BlockTechJapan</h4>
@@ -65,7 +65,7 @@
         <span class="slider-progres-bar"></span>
       </div>
       <div>
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'pour-travailler-autrement.png' )?>" alt="Pour travailler autrement">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'pour-travailler-autrement.jpg' )?>" alt="Pour travailler autrement">
         <div class="slider-item-overlay">
           <a href="/about/#about-section-3" class="content-3">
             <div class="first">
@@ -98,7 +98,7 @@
     </div>
     <div class="h-section-part-1">
       <div class="h-section-part-1-column">
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'conference.png' )?>" alt="Conference">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'conference.jpg' )?>" alt="Conference">
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Seminars</span></h4>
         <h5>ビジネスパーソンのためのブロックチェーンセミナー</h5>
@@ -107,7 +107,7 @@
           <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
       <div class="h-section-part-1-column">
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'library.png' )?>" alt="library">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'library.jpg' )?>" alt="library">
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Education</span></h4>
         <h5>法人向けブロックチェーン教育サービス</h5>
@@ -116,7 +116,7 @@
           <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
       <div class="h-section-part-1-column">
-        <img data-is-loaded="false" src="<?=Media::contentURI( 'engineer-person.png' )?>" alt="Engineer person">
+        <img data-is-loaded="false" src="<?=Media::contentURI( 'engineer-person.jpg' )?>" alt="Engineer person">
         <div class="stik"></div>
         <h4>BlockTechJapan <span>Development</span></h4>
         <h5>ブロックチェーン開発サービス</h5>
