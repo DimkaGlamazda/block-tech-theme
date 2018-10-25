@@ -136,6 +136,7 @@
 
 						.content-2 {
 							@include flex(center, center, column);
+							@include transition(all .4s ease);
 							position:relative;
 							color:#fff;
 							margin: 15% 30% 10% 10%;
@@ -161,13 +162,19 @@
 							p {
 								text-align: center;
 							}
+
+							&:hover {
+								background-color: rgba(0, 97, 255, 1);
+							}
+							
 						}
 
 						.content-3 {
 							@include flex();
+							@include transition(all .4s ease);
 							height:150px;
 							width:65%;
-							background-color: #392E7F;
+							background-color: #4e2e7f;
 							color:#fff;
 							margin: 211px auto 0;
 							text-decoration:none;
@@ -189,6 +196,10 @@
 										width: 1px;
 									}
 								}
+							}
+
+							&:hover {
+								background-color: rgba(41, 2, 99, 1);
 							}
 						}
 					}

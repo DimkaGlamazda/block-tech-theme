@@ -35,7 +35,7 @@
               <span>世界を代表するブロックチェーン先駆者が語る、</span>
               <span>ブロックチェーンの最新事例とビジネスに実装する方法。</span>
             </p>
-            <a href="/news/webサイトをオープンしました/">詳細はこちら</a>
+            <a href="/news/【dbic主催】blocktechjapan初の東京セミナー開催のお知らせ/">詳細はこちら</a>
           </div>
           <div class="slide-number">01</div>
         </div>
@@ -67,7 +67,7 @@
       <div>
         <img data-is-loaded="false" src="<?=Media::contentURI( 'pour-travailler-autrement.png' )?>" alt="Pour travailler autrement">
         <div class="slider-item-overlay">
-          <a href="#" class="content-3">
+          <a href="/about/#about-section-3" class="content-3">
             <div class="first">
               <div>BlockTechJapan CEO</div>
               サーシャ・コフマン
@@ -103,8 +103,8 @@
         <h4>BlockTechJapan <span>Seminars</span></h4>
         <h5>ビジネスパーソンのためのブロックチェーンセミナー</h5>
         <a href="/services#services-section-1">セミナーサービスについて詳しく</a>
-        <p>ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</p>
-        <span class="mobile-show-trigger"><span></span><span></span></span>
+        <p>これからブロックチェーンのプロジェクトにお取り組みをご検討されている企業様向けのセミナーを開催し、ブロックチェーン・テクノロジーの有益性や導入事例などをご紹介します。</p>
+          <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
       <div class="h-section-part-1-column">
         <img data-is-loaded="false" src="<?=Media::contentURI( 'library.png' )?>" alt="library">
@@ -112,8 +112,8 @@
         <h4>BlockTechJapan <span>Education</span></h4>
         <h5>法人向けブロックチェーン教育サービス</h5>
         <a href="/services#services-section-3">学習サービスについて詳しく</a>
-        <p>ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</p>
-        <span class="mobile-show-trigger"><span></span><span></span></span>
+       <p>ブロックチェーンのビジネスへの実装プロジェクトにお取り組みをされている担当者様のテクニカル・スキルを向上させるための教育サービスを提供し、お客様組織内の開発体制を強化します。</p>
+          <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
       <div class="h-section-part-1-column">
         <img data-is-loaded="false" src="<?=Media::contentURI( 'engineer-person.png' )?>" alt="Engineer person">
@@ -121,8 +121,8 @@
         <h4>BlockTechJapan <span>Development</span></h4>
         <h5>ブロックチェーン開発サービス</h5>
         <a href="/services#service-section-5">開発サービスについて詳しく</a>
-        <p>ブロックチェーンプロジェクト関係者の技術力を向上させるためのオンライン・オフラインによるブロックチェーン学習サービスを提供し、お客様組織内の開発体制を強化します。</p>
-        <span class="mobile-show-trigger"><span></span><span></span></span>
+        <p>新しい世界のスタンダードとなるような、ご要望以上のブロックチェーン・プロジェクトを実現するための開発サービスを提供し、お客様のビジネス全体の成長と拡大を支援します。</p>
+          <span class="mobile-show-trigger"><span></span><span></span></span>
       </div>
     </div>
   </div>
