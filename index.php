@@ -1,10 +1,7 @@
 <?php get_header() ?>
-<div class="h-header-bg">
-  <img data-is-loaded="false" src="<?=Media::contentURI( 'lection-mobile.jpg' )?>" alt="Heder Lection">
-  <video id="home-video" class="h-header-media" data-js="h-header-bg" autoplay muted loop>
-    <source id="mp4" src="<?=Media::contentURI( 'bg-video.mp4' )?>">
-  </video>
-</div>
+
+<?php Parts::getHomBackground() ?>
+
 <header class="header home-header" data-js="h-header-section">
 
     <?php Parts::getHeader() ?>
@@ -128,6 +125,7 @@
   </div>
 </section>
 
+
 <section class="home-representative-message-section">
   <div class="representative-message-section-bg">
     <div class="representative-message-bg-layer layer-1">
@@ -159,6 +157,11 @@
     <img data-is-loaded="false" src="<?=Media::contentURI( 'home-alex.png' )?>" alt="BlockTechJapan CEO">
   </div>
 </section>
+
+<ul class="representive-bottom-mobile-links">
+  <li class="before-triangle"><a href="/about#about-section-3">代表メッセージ</a></li>
+  <li class="before-triangle"><a href="/about">BlockTechJapanとは</a></li>
+</ul>
 
 <section class="h-section-3">
   <h3 class="section-title">USE CASES</h3>

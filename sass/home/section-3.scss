@@ -230,7 +230,7 @@
 @include media-breakpoint-down(sm) {
 
 	.h-section-3 {
-		margin: 0 0 20px;
+		margin: 0;
 
 		.section-body {
 			width: 100%;
@@ -265,6 +265,12 @@
 			.img-right {
 				img {
 					top:-100%
+				}
+			}
+
+			.left-content {
+				.content-wrapper {
+					@include transform(translateX(5%));
 				}
 			}
 

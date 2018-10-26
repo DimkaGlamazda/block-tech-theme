@@ -28,7 +28,7 @@
 
 		p {
 			@include font-size(15px);
-			font-wight: normal;
+			font-weight: normal;
 			margin-bottom: 20px;
 			line-height:26px;
 		}
@@ -156,6 +156,10 @@
 
 			.cases-4-logo {
 				width:100%;
+			}
+
+			.cases-finance-side-img-1 {
+				width: 100%;
 			}
 		}
 	}

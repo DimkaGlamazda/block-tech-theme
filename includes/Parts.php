@@ -43,4 +43,18 @@ class Parts
     <?php endif; ?>
     <?php
   }
+
+  public static function getHomBackground()
+  {
+    ?>
+    <div class="h-header-bg">
+      <img data-is-loaded="false" src="<?=Media::contentURI( 'lection-mobile.jpg' )?>" alt="Heder Lection">
+      <?php if(! wp_is_mobile()): ?>
+        <video id="home-video" class="h-header-media" data-js="h-header-bg" autoplay muted loop>
+          <source id="mp4" src="<?=Media::contentURI( 'bg-video.mp4' )?>">
+        </video>
+      <?php endif; ?>
+    </div>
+    <?php
+  }
 }

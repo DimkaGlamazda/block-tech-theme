@@ -182,7 +182,6 @@
 			width: 100%;
 
 			.h-section-part-0 {
-				padding: 0 25px;
 				p {
 					width: 100%;
 				}
@@ -236,8 +235,9 @@
 		}
 
 		.section-body {
-			margin-top: 15px;
-			margin-bottom:0;
+			margin: 15px 0 0;
+			padding: 0 25px;
+
 			.h-section-part-1 {
 				@include flex(center, space-between, column);
 

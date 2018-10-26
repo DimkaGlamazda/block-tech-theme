@@ -143,8 +143,10 @@
 		padding: 0 0 0 10px;
 
 		h6 {
+			@include font-size(20px);
 			z-index:2;
 			color:#fff;
+			margin-bottom:0;
 		}
 
 		.button-nav {

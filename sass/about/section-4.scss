@@ -73,6 +73,10 @@
 				.description {
 					width:100%;
 
+					h4 {
+						margin-bottom:0;
+					}
+
 					h5 {
 						@include font-size(15px);
 						margin-bottom:0;

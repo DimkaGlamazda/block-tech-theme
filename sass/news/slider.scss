@@ -46,11 +46,18 @@
 @include media-breakpoint-between(sm, md) {
 	.list-news-slider {
 		width:1200px;
+
+		.news-slider-item {
+
+		}
 	}
 }
 
 @include media-breakpoint-down(sm) {
 	.list-news-slider {
 		width:100%;
+		.news-slider-item {
+			padding: 35px 15% 41px;
+		}
 	}
 }

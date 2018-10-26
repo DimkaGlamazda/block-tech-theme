@@ -89,6 +89,10 @@
 
 @include media-breakpoint-down(sm) {
 	.about-section-3{
+
+		.bg-4 {
+			top: 31%;
+		}
 		.section-body {
 
 			padding: 0 25px 300px;
@@ -104,6 +108,10 @@
 			.note {
 				@include position(absolute, false, 0, 4%);
 				padding: 0 25px 0 0;
+
+				span {
+					@include font-size(15px);
+				}
 			}
 
 			.man {
@@ -112,6 +120,7 @@
 				background-size: 234px;
 				height: 515px;
 			}
+
 		}
 	}	
 }
