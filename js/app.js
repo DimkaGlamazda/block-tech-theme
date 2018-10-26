@@ -209,12 +209,14 @@ var Slider = function () {
         auto: true,
         loop : true,
         pause: 5000,
+        speed : 1000,
         minSlides: 2,
         maxSlides: 2,
         controls: false,
         pagerSelector: ".dots",
         autoHover: true,
-        touchEnabled : false
+        touchEnabled : true,
+        preventDefaultSwipeY: false,
     });
 
     jQuery(document).on('click', '[aria-hidden="false"] .home-slider-next', function() {
